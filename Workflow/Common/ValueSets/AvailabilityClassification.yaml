@@ -1,0 +1,14 @@
+name: AvailabilityClassification
+values:
+  Low:
+    text: 
+      en: Low (>2 days)
+      nl: Laag (>2 dagen)
+  Medium:
+    text: 
+      en: Medium (1-2 days)
+      nl: Midden (1-2 dagen)
+  High:
+    text:
+      en: High (<1 day)
+      nl: Hoog (<1 dag)

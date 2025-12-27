@@ -1,0 +1,42 @@
+name: InvolvedParty
+titlePlural: Involved parties
+isEmbedded: true
+
+properties:
+  - name: Party
+    text:
+      nl: Partij
+      en: Party
+    type: String!
+  - name: Type
+    type: PartyType!
+    text:
+      nl: Rol
+      en: Role
+    values:
+      Processor:
+        text:
+          nl: Verwerker
+          en: Processor
+      SubProcessor:
+        text:
+          nl: Subverwerker
+          en: Subprocessor
+      Controller:
+        text:
+          nl: Verwerkingsverantwoordelijke
+          en: Controller
+      Issuer:
+        text:
+          nl: Verstrekker
+          en: Issuer
+      Recipient:
+        text:
+          nl: Ontvanger
+          en: Recipient
+  - name: Country
+    text:
+      nl: Land
+      en: Country
+    type: Country
+

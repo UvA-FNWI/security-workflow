@@ -1,0 +1,10 @@
+name: YesNo
+values:
+  Yes:
+    text:
+      en: Yes
+      nl: Ja
+  No:
+    text:
+      en: No
+      nl: Nee

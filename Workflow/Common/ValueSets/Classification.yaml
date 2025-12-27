@@ -1,0 +1,14 @@
+name: Classification
+values:
+  Low:
+    text:
+      en: Low
+      nl: Laag
+  Medium:
+    text:
+      en: Medium
+      nl: Midden
+  High:
+    text:
+      en: High
+      nl: Hoog

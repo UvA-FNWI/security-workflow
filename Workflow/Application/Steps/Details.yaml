@@ -1,0 +1,9 @@
+name: Details
+title:
+  en: Add details
+  nl: Details aanvullen
+
+hierarchyMode: Parallel
+children:
+  - Classification
+  - Privacy

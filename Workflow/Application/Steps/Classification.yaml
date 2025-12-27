@@ -1,0 +1,181 @@
+name: Classification
+title:
+  en: Classification
+  nl: Classificatie
+
+actions:
+- type: Submit
+  form: Classification
+  roles: [ISO, Editor]  
+
+ends:
+  event: Classification
+
+properties:
+  - name: AvailabilityProcess
+    text:
+      en: Process
+      nl: Proces
+    type: AvailabilityClassification!
+    description:
+      en: After how much time will the primary process (teaching, learning, research) suffer as a result of the unavailability of the information system?
+      nl: Na hoeveel tijd ondervindt het primair proces (onderwijs geven, onderwijs volgen, onderzoek) last van het niet beschikbaar zijn van het informatiesysteem?
+  - name: AvailabilityReputation
+    text:
+      en: Public confidence/reputation
+      nl: Publiek vertrouwen/reputatie
+    type: AvailabilityClassification!
+    description:
+      en: After how much time will confidence in the institution be damaged, or will there be damage to its image, if the information system is not available?
+      nl: Na hoeveel tijd wordt het vertrouwen in de instelling geschaad, of is er imagoschade, als het informatiesysteem niet beschikbaar is?
+  - name: AvailabilityCosts
+    text:
+      en: Additional costs
+      nl: Additionele kosten
+    type: AvailabilityClassification!
+    description:
+      en: After how much time are additional costs incurred if the information system is unavailable (e.g. for _workarounds_)?
+      nl: Na hoeveel tijd moeten er extra kosten gemaakt worden als het informatie-systeem niet beschikbaar is (bijvoorbeeld voor _workarounds_)?
+  - name: AvailabilityDependencies
+    text:
+      en: Dependencies
+      nl: Afhankelijkheden
+    type: AvailabilityClassification!
+    description:
+      en: After how much time will the loss of availability impact other declining systems or processes (internal or external customers)?
+      nl: Na hoeveel tijd heeft het verlies van beschikbaarheid impact op andere afnemende systemen of processen (interne of externe afnemers)?
+  - name: AvailabilityExplanation
+    text:
+      en: Explanation
+      nl: Onderbouwing
+    type: String!
+    layout:
+      multiline: true
+  - name: Availability
+    type: AvailabilityClassification!
+    text:
+      en: Overall score
+      nl: Algehele score
+    shortText:
+      en: Availability
+      nl: Beschikbaarheid
+
+  - name: IntegrityFinance
+    type: Classification!
+    text:
+      en: (Financial) loss
+      nl: (Financiële) schade
+    description:
+      en: How serious will it be if data/results (e.g. study progress data, research results) have been compromised, making the data/results unreliable?
+      nl: Hoe ernstig is het als gegevens/resultaten zijn gecompromitteerd waardoor de gegevens / resultaten onbetrouwbaar zijn (denk aan studievoortgangs-gegevens, onderzoeksresultaten)?
+  - name: IntegrityReputation
+    type: Classification!
+    text:
+      en: Public confidence/reputation
+      nl: Publiek vertrouwen/reputatie
+    description:
+      en: How serious will it be for the institution if incorrect data (e.g. study progress data, research data) is used?
+      nl: Hoe ernstig is het voor de instelling als onjuiste gegevens (bv. studievoortgangsgegevens, onderzoeksgegevens) worden gebruikt?
+  - name: IntegrityConfidence
+    type: Classification!
+    text:
+      en: Confidence users
+      nl: Vertrouwen gebruikers
+    description:
+      en: How great will the adverse effects on users' confidence or motivation be if they have to work with incorrect information?
+      nl: Hoe groot zijn de nadelige effecten voor het vertrouwen of de motivatie van gebruikers als ze met onjuiste informatie moeten werken?
+  - name: IntegrityFraud
+    type: Classification!
+    text:
+      en: Fraud
+      nl: Fraude
+    description:
+      en: How great is the risk that a user could gain undue advantage by deliberately changing a piece of data?
+      nl: Hoe groot is het risico dat een gebruiker onrechtmatig voordeel kan behalen door een gegeven opzettelijk te veranderen?
+  - name: IntegrityDependencies
+    type: Classification!
+    text:
+      en: Dependencies
+      nl: Afhankelijkheden
+    description:
+      en: How serious will it be if incorrect data (e.g. study progress data, research data) is used or delivered to other systems or processes (internal or external customers)?
+      nl: Hoe ernstig is het als onjuiste gegevens (bv. studievoortgangsgegevens, onderzoeksgegevens) worden gebruikt of geleverd aan andere systemen of processen (interne of externe afnemers)?
+  - name: IntegrityExplanation
+    text:
+      en: Explanation
+      nl: Onderbouwing
+    type: String!
+    layout:
+      multiline: true
+  - name: Integrity
+    type: Classification!
+    text:
+      en: Overall score
+      nl: Algehele score
+    shortText:
+      en: Integrity
+      nl: Integriteit
+
+  - name: ConfidentialitySensitivity
+    type: Classification!
+    text:
+      en: Sensitivity of information
+      nl: Gevoeligheid van informatie
+    description:
+      en: How serious/great will the adverse effects be for individuals if confidentiality is not guaranteed and the data (e.g. personal data, results) fall,
+      nl: Hoe ernstig/groot zijn de nadelige gevolgen voor individuen als de vertrouwelijkheid niet is gewaarborgd en de gegevens (bv. persoonsgegevens, resultaten) op straat komen te liggen (persoonsgegevens/resultaten), whether intentionally or unintentionally?
+  - name: ConfidentialityRegulations
+    type: Classification!
+    text:
+      en: Regulations
+      nl: Regelgeving
+    description:
+      en: Are there (external) laws/regulations to be complied with (e.g. Public Access to Government Information Act, Copyright Act)?
+      nl: Zijn er (externe) wetgeving/regelgeving waaraan moet worden voldaan (bijv. Wet open overheid, Auteurswet)?
+  - name: ConfidentialityReputation
+    type: Classification!
+    text: 
+      en: Public confidence/reputation
+      nl: Publiek vertrouwen/reputatie
+    description: 
+      en: How great will the damage to the institution's reputation be if data is leaked?
+      nl: Hoe groot is de reputatieschade van de instelling als gegevens uitlekken?
+  - name: ConfidentialityConfidence
+    type: Classification!
+    text:
+      en: Confidence users
+      nl: Vertrouwen gebruikers
+    description: 
+      en: How great will the adverse effects of data leakage be on employee/student confidence or motivation?
+      nl: Hoe groot zijn de nadelige effecten van het uitlekken van gegevens op het vertrouwen of de motivatie van medewerkers/studenten?
+  - name: ConfidentialityFraud
+    type: Classification!
+    text: 
+      en: Fraud
+      nl: Fraude
+    description: 
+      en: How great will the impact be of fraudulent acts resulting from the leakage of this data (identity fraud, financial, passwords, etc.)?
+      nl: Hoe groot is de impact van frauduleuze handelingen als gevolg van het uitlekken van deze gegevens (identiteitsfraude, financieel, wachtwoorden etc.)?
+  - name: ConfidentialityFinance
+    type: Classification!
+    text: 
+      en: (Financial) loss
+      nl: (Financiële) schade 
+    description:
+      en: How likely is it that the institution will be held liable if confidentiality is breached?
+      nl: Hoe groot is de kans dat de instelling aansprakelijk wordt gesteld als de vertrouwelijkheid van de gegevens wordt geschonden?
+  - name: ConfidentialityExplanation
+    type: String!
+    text:
+      en: Explanation
+      nl: Onderbouwing
+    layout:
+      multiline: true
+  - name: Confidentiality
+    type: Classification!
+    text:
+      en: Overall score
+      nl: Algehele score
+    shortText:
+      en: Confidentiality
+      nl: Vertrouwelijkheid

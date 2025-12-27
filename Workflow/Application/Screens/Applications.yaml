@@ -1,0 +1,17 @@
+name: Applications
+workflowDefinition: Application
+columns:
+  - property: Name
+    link: true
+    default: No name
+  - property: Type
+    filterType: Pick
+  - endDate: Start
+  - currentStep: true
+    default: Draft
+  - property: Hosting
+    filterType: Pick
+  - property: PersonalData
+    title:
+      en: Personal data
+      nl: Persoonsgegevens

@@ -1,0 +1,86 @@
+name: Application
+titlePlural:
+  nl: Toepassingen
+  en: Applications
+instanceTitle: '{{ Name }}'
+isAlwaysVisible: true
+
+properties:
+  - name: Name
+    type: String!
+    text:
+      en: Name
+      nl: Naam
+    description:
+      en: Process/system/project name
+      nl: Naam van het proces / systeem / project
+  - name: Type
+    type: AppType!
+    values:
+      Concept: { }
+      Cloud:
+        text:
+          en: Cloud service
+          nl: Clouddienst
+      Infrastructure:
+        text:
+          en: Infrastructure
+          nl: Infrastructuur
+      Research:
+        text:
+          en: Research project
+          nl: Onderzoeksproject
+      Processing:
+        text:
+          en: Processing
+          nl: Verwerking
+      Software: { }
+      Web:
+        text:
+          en: Web application
+          nl: Webapplicatie
+  - name: Editors
+    text:
+      en: Other stakeholders
+      nl: Overige belanghebbenden
+    description:
+      nl: Deze personen hebben rechten om dit dossier te bewerken
+      en: These users are authorized to edit this record
+    type: "[User]"
+
+  - name: Contract
+    text:
+      en: Service contract
+      nl: Dienstovereenkomst
+    type: File
+  - name: DPA
+    text:
+      en: Data processing agreement
+      nl: Verwerkingsovereenkomst
+    type: File
+  - name: Other
+    text:
+      en: Other relevant documents
+      nl: Andere relevante documenten
+    type: "[File]"
+
+
+globalActions:
+  - name: CreateApp
+    roles: [ISO]
+    type: CreateInstance
+  - name: ViewAll
+    roles: [ISO, Editor]
+    type: View
+    forms: [Base, Privacy, Classification]
+  - roles: [ISO, Editor]
+    type: Edit
+    forms: [Base, Privacy, Classification]
+    steps: [Basics, Details, Review]
+
+steps:
+  - Start
+  - Basics
+  - Details
+  - Review
+  - Approved

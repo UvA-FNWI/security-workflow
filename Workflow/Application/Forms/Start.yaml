@@ -1,0 +1,7 @@
+name: Start
+pages:
+  - name: Start
+    fields:
+      - Name
+      - Type
+      - Editors

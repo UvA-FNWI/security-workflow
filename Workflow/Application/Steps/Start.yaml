@@ -1,0 +1,11 @@
+name: Start
+
+actions:
+  - roles: [ISO]
+    name: SubmitStart
+    type: Submit
+    form: Start
+
+
+ends:
+  event: Start

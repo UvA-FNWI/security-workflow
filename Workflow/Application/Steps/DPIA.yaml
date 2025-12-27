@@ -1,0 +1,111 @@
+name: DPIA
+
+properties:
+  - name: Description
+    text:
+      nl: Beschrijving plan
+      en: Plan description
+    description:
+      nl: |
+        Geef een gedetailleerde beschrijving van het voorgenomen project en/of de nieuwe of te wijzigen verwerking.
+        Beschrijf onder andere de aanleiding (welk probleem het oplost), context, scope en eventuele bijzonderheden.
+      en: |
+        Provide a detailed description of the proposed project and/or the new or modified processing.
+        Describe, among other things, the reason (which problem it solves), context, scope and any particulars.
+    type: String!
+    layout: { multiline: true }
+  - name: Goals
+    text:
+      nl: Verwerkingsdoeleinden
+      en: Processing purposes
+    description:
+      nl: Beschrijf concreet wat het doel is van de voorgenomen gegevensverwerking.
+      en: Describe in concrete terms what the purpose of the intended data processing is.
+    type: String!
+    layout: { multiline: true }
+  - name: Data
+    text:
+      nl: Persoonsgegevens
+      en: Personal data
+    description:
+      nl: Benoem welke persoonsgegevens verwerkt worden. Geef bij type aan of het een gewoon, gevoelig, bijzonder, strafrechtelijk, of overig persoonsgegeven betreft.
+      en: State which personal data are processed. Indicate in the column ‘Type’ whether it concerns normal, sensitive, special, criminal or other personal data.
+    type: String!
+    # table:
+    #   form: PersonalDataRow
+  - name: Subjects
+    type: String!
+    layout: { multiline: true }
+    text:
+      nl: Categorieën en aantallen betrokkenen
+      en: Categories and numbers of data subjects
+    description:
+      nl: Benoem de categorieën en bijbehorende aantallen van betrokkenen van wie de persoonsgegevens worden verwerkt.
+      en: Name the categories and associated numbers of data subjects whose personal data are processed.
+  - name: ProcessingDescription
+    type: String!
+    layout: { multiline: true }
+    text:
+      nl: Beschrijving verwerkingsactiviteiten
+      en: Description of processing activities
+  - name: DataMinimalization
+    type: String!
+    layout: { multiline: true }
+    text:
+      nl: Dataminimalisatie
+      en: Data minimization
+    description:
+      nl: |
+        Beargumenteer waarom de persoonsgegevens nodig zijn om het doel te bereiken.
+        Beargumenteer dit per (categorie van) persoonsgegeven(s).
+        Kan het doel met minder persoonsgegevens bereikt worden?
+      en: |
+        Justify why the personal data is necessary to achieve the purpose. Justify this per (category of) personal data.
+        Can the goal be achieved with less personal data?
+  - name: Retention
+    type: String!
+    layout: { multiline: true }
+    text:
+      nl: Bewaartermijnen
+      en: Retention periods
+    description:
+      nl: Bepaal en motiveer de bewaartermijn(en) van de persoonsgegevens. Voor de verschillende (categorieën van) persoonsgegevens kunnen verschillende bewaartermijnen van toepassing zijn.
+      en: Determine and justify the retention period(s) of the personal data. Different retention periods may apply to the different (categories of) personal data.
+
+  - name: LegalBasis
+    type: String!
+    layout: { multiline: true }
+    text:
+      nl: Grondslag
+      en: Legal basis
+    description:
+      nl: Bepaal op welke grondslag de gegevensverwerking wordt gebaseerd.
+      en: Determine the legal basis of the data processing.
+  - name: SpecialData
+    type: String!
+    layout: { multiline: true }
+    text:
+      nl: Bijzondere persoonsgegevens
+      en: Special personal data
+    description:
+      nl: |
+        Indien bijzondere of strafrechtelijke persoonsgegevens worden verwerkt, beoordeel of één van de wettelijke uitzonderingen op het verwerkingsverbod van toepassing is.
+        Bij verwerking BSN of kopie identiteitsdocument, beoordeel of dat is toegestaan.
+      en: |
+        If special or criminal personal data are processed, assess whether one of the legal exceptions to the processing prohibition applies.
+        When processing a BSN or copy of an identity document, assess whether this is permitted
+  - name: Necessity
+    type: String!
+    layout: { multiline: true }
+    text:
+      nl: Noodzaak en evenredigheid
+      en: Necessity and proportionality
+    description:
+      nl: |
+        Beoordeel of de voorgenomen gegevensverwerkingen noodzakelijk zijn om het doel te bereiken. Beargumenteer hierbij in ieder geval of is voldaan aan de eisen van proportionaliteit en subsidiariteit.
+        
+        1. Proportionaliteit: staat het doel van de verwerking in verhouding tot de inbreuk op de privacy van de betrokkenen? (Een groot belang (doel) rechtvaardigt een grotere inbreuk.
+           Indien het onwaarschijnlijk is dat met de verwerking het doel wordt bereikt, dan is de verwerking waarschijnlijk niet proportioneel).
+        2. Subsidiariteit: Kan het doel van de verwerking op een andere, voor de betrokkene minder nadelige wijze, worden bereikt?
+      en: |
+        Assess whether the intended data processing is necessary to achieve the goal. In any case, substantiate whether the requirements of proportionality and subsidiarity have been met.

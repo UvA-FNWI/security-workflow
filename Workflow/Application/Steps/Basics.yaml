@@ -1,0 +1,344 @@
+name: Basic
+title:
+  en: Add base information
+  nl: Basisgegevens invullen
+
+ends:
+  event: Base
+
+actions:
+- type: Submit
+  form: Base
+  roles: [ISO, Editor]  
+
+properties:
+  - name: Description
+    type: String!
+    text:
+      en: Description
+      nl: Omschrijving
+    description:
+      en: |
+        Make sure your purpose description is as SMART as possible. NB: the purpose should be clear and complete.
+        The purpose should indicate the added value/function of the process/system/project, so that it is clear to the reader what it does and why it is necessary.
+      nl: |
+        Zorg voor een zo SMART mogelijke doel omschrijving. Let op: het doel moet duidelijk en volledig zijn.
+        Uit het doel komt de toegevoegde waarde / functie van het proces/systeem/project naar voren zodat voor de lezer duidelijk is wat het doet en waarom het noodzakelijk is.
+    layout:
+      multiline: true
+
+  - name: BusinessFunction
+    type: BusinessFunction
+    text:
+      en: Main business function (HORA)
+      nl: Hoofdbedrijfsfunctie (HORA)
+  - name: Process
+    type: Process
+    text:
+      en: Main process (HORA)
+      nl: Hoofdproces (HORA)
+
+  - name: OwnerRole
+    text:
+      en: Role owner
+      nl: Rol eigenaar
+    type: String!
+  - name: Owner
+    text:
+      en: Owner
+      nl: Eigenaar
+    type: User
+  - name: Stakeholders
+    text:
+      en: Access rights
+      nl: Inzagerechten
+    type: "[User]"
+  - name: Institution
+    text:
+      en: Institution
+      nl: Instelling
+    layout:
+      type: RadioList
+    type: "[Institution]!"
+    values:
+      UvA: {}
+      HvA: {}
+  - name: OrgUnit
+    text:
+      en: Organisational unit
+      nl: Organisatieonderdeel
+    type: OrgUnit!
+    values:
+      AC:
+        text:
+          en: Administration Centre
+          nl: Administratief Centrum
+      ICTS:
+        text: ICT Services
+      FS:
+        text: Facility Services
+      UB:
+        text:
+          en: University Library
+          nl: Bibliotheek
+      BB:
+        text:
+          en: Executive Staff
+          nl: Bestuursstaf
+        condition: UvA
+      BS:
+        text:
+          en: Executive Staff
+          nl: Bestuursstaf
+        condition: HvA
+      StS:
+        text:
+          en: Student Services
+          nl: Studenten Services
+        condition: UvA
+      SZ:
+        text:
+          en: Student Affairs
+          nl: Studentenzaken
+        condition: HvA
+      FdR:
+        text:
+          en: Amsterdam Law School
+          nl: Faculteit der Rechtsgeleerdheid
+        condition: UvA
+      FEB:
+        text:
+          en: Economics and Business
+          nl: Economie en Bedrijfskunde
+        condition: UvA
+      FGw:
+        text:
+          en: Faculty of Humanities
+          nl: Faculteit der Geesteswetenschappen
+        condition: UvA
+      FMG:
+        text:
+          en: Faculty of Social and Behavioural Sciences
+          nl: Faculteit der Maatschappij- en Gedragswetenschappen
+        condition: UvA
+      FNWI:
+        text:
+          en: Faculty of Science
+          nl: Faculteit der Natuurwetenschappen, Wiskunde en Informatica
+        condition: UvA
+      FDMCI:
+        text:
+          en: Faculty of Digital Media and Creatie Industries
+          nl: Faculteit Digitale Media en Creatieve Industrie
+        condition: HvA
+      FBE:
+        text:
+          en: Faculty of Business and Economics
+          nl: Faculteit Business en Economie
+        condition: HvA
+      FBSV:
+        text:
+          en: Faculty of Sports and Nutrition
+          nl: Faculteit Bewegen, Sport en Voeding
+        condition: HvA
+      FG:
+        text:
+          en: Faculty of Health
+          nl: Faculteit Gezondheid
+        condition: HvA
+      FMR:
+        text:
+          en: Faculty of Applied Social Sciences and Law
+          nl: Faculteit Maatschappij en Recht
+        condition: HvA
+      FOO:
+        text:
+          en: Faculty of Education
+          nl: Faculteit Onderwijs en Opvoeding
+        condition: HvA
+      FT:
+        text:
+          en: Faculty of Technology
+          nl: Faculteit Techniek
+        condition: HvA
+
+  - name: Institute
+    text:
+      en: Department
+      nl: Afdeling
+    type: String!
+  - name: Architecture
+    type: String!
+    text:
+      en: Description of the overall architecture
+      nl: Omschrijving van de algehele architectuur
+    description:
+      en: |
+        Add the design (architecture) of the environment, which includes the source systems/target systems/suppliers.
+        In any case the following questions are relevant (including explanations):
+        
+        - Is there a link to existing systems?
+        - Are data loaded manually?
+        - Will data be exported?
+      nl: |
+        Voeg het ontwerp (de architectuur) van de omgeving toe, dit is inclusief bronsystemen/doelsystemen/leveranciers.
+        De volgende vragen zijn in ieder geval relevant (inclusief toelichting): 
+        
+        - Wordt er gekoppeld met bestaande systemen? 
+        - Worden data handmatig ingeladen? 
+        - Worden data geëxporteerd?
+    layout:
+      multiline: true
+      allowAttachments: true
+
+  - name: PersonalData
+    text:
+      en: Does this application involve processing of personal data?
+      nl: Worden er persoonsgegevens verwerkt in deze toepassing?
+    type: YesNo!
+    layout:
+      type: RadioList
+
+  - name: NumberOfSubjects
+    text:
+      en: Number of data subjects
+      nl: Aantal betrokkenen
+    description:
+      en: |
+        Provide an estimate of the number of data subjects whose personal data will be processed. For example: 5,000 students; all FS staff; 200 patients.
+      nl: |
+        Geef een schatting van het aantal betrokkenen van wie persoonsgegevens worden verwerkt. Bijvoorbeeld: 5.000 studenten; alle medewerkers FS; 200 patiënten.
+    type: String!
+    condition:
+      name: PersonalData
+  - name: DataType
+    text: 
+      en: Type of data
+      nl: Soort data
+    description:
+      en: |
+        This refers to all personal data and other data being processed. Indicate which data qualify as personal data.
+        
+        Examples include: Name and address details, phone number, sex, student number, course enrolment results, HvA-ID, UvAnetID, IP numbers, copy of passport, bank account, etc.
+        Mention both any processing of special personal data2, and that of other data such as patent-sensitive, financial or research data.
+      nl: |
+        Het gaat hier om alle (persoons)gegevens die worden verwerkt. Geef aan welke gegevens kwalificeren als persoonsgegevens.
+        
+        Denk aan: NAW, telefoonnummer, geslacht, studentnummer, resultaten vakinschrijvingen, HvA-ID, UvAnetID, IP-nummers, kopie paspoort, bank-rekening etc.
+        Maak vermelding van eventuele verwerking van bijzondere persoonsgegevens1. Maar ook andere gegevens zoals patentgevoelige, financiële of onderzoeksgegevens.
+    type: String!
+    layout: 
+      multiline: true
+  - name: DataMinimisation
+    text:
+      en: Data minimisation
+      nl: Dataminimalisatie
+    description:
+      en: Are the personal data necessary for the purpose described? Are the personal data collected already available in other systems? Are there ways to minimize the processing of the (personal) data?
+      nl: Zijn de persoonsgegevens noodzakelijk voor het omschreven doel? Zijn de persoonsgegevens die worden verzameld al in andere systemen beschikbaar? Zijn er manieren waarop je de verwerking van de (persoons)gegevens kunt minimaliseren?
+    type: String
+    layout:
+      multiline: true
+    condition:
+      name: PersonalData
+  - name: NumberOfAdmins
+    text: 
+      en: Number of administrators
+      nl: Aantal beheerders
+    description:
+      en: Provide an estimate of the number of administrators, which includes both decentralised and centralised administrators, and functional and technical administrators.
+      nl: Geef een schatting van het aantal beheerders. Zowel decentraal als centraal, functionele en technische beheerders.
+    type: String!
+
+  - name: Location
+    text:
+      en: Location
+      nl: Locatie
+    type: Location!
+    values:
+      UvA:
+        text: 
+          en: Entirely within the institution
+          nl: Geheel binnen de instelling
+      EU:
+        text:
+          en: Entirely within the EU
+          nl: Geheel binnen de EU
+      Elsewhere:
+        text:
+          en: Outside the EU
+          nl: Geheel buiten de EU
+  - name: TransferMechanism
+    text:
+      en: Transfer mechanism
+      nl: Doorgiftemechanisme
+    type: TransferMechanism!
+    condition:
+      logical:
+        operator: And
+        children:
+          - value:
+              property: Location
+              equal: =Elsewhere
+          - name: PersonalData
+    values:
+      AdequacyDecision:
+        text:
+          nl: Adequaatheidsbesluit
+          en: Adequacy decision
+      StandardContractualClauses:
+        text:
+          nl: Standard Contractual Clauses (modelcontract)
+          en: Standard Contractual Clauses (model contract)
+      ApprovedCodeOfConductOrCertificationMechanism:
+        text:
+          nl: Goedgekeurde gedragscode of certificeringsmechanisme
+          en: Approved code of conduct or certification mechanism
+      BindingCorporateRules:
+        text:
+          nl: Binding Corporate Rules (bindende bedrijfsvoorschriften)
+          en: Binding Corporate Rules
+      SpecificExceptions:
+        text:
+          nl: Doorgifte op basis van specifieke uitzonderingen (artikel 49 AVG)
+          en: Transfer based on specific exceptions (article 49 GDPR)
+
+  - name: Hosting
+    type: HostingType
+    values:
+      FEIOG: {}
+      TransIP: {}
+      Azure: {}
+      AWS: {}
+      SaaS: {}
+      Other:
+        text:
+          en: Other
+          nl: Anders
+
+  - name: Hostnames
+    text:
+      en: Hostname(s), if applicable
+      nl: Hostname(s), indien van toepassing
+    type: "[String]"
+
+  - name: ExternalParties
+    text:
+      en: External parties involved
+      nl: Betrokken externe partijen
+    type: String!
+    layout:
+      multiline: true
+
+  - name: WorkshopDate
+    text:
+      en: Workshop date
+      nl: Datum workshop
+    type: Date
+  - name: WorkshopParticipants
+    text:
+      en: Workshop participants and their roles
+      nl: Deelnemers workshop en hun rol
+    layout: 
+      multiline: true
+    type: String

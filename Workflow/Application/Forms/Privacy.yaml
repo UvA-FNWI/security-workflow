@@ -1,0 +1,28 @@
+name: Privacy
+
+pages:
+  - name: BasicDetails
+    title:
+      en: Basic details
+      nl: Basisgegevens
+    fields:
+      - Goal
+      - LegalBasis
+      - LegalBasisExplanation
+      - SpecialCategories
+      - SpecialException
+      - PartiesInvolved
+      - Retention
+      - Transparency
+      - Quality
+      - Risks
+      - Measures
+
+  - name: PreDPIA
+    title: Pre-DPIA
+    fields:
+      - BlackList
+      - ExplanationBlack
+      - GreyList
+      - ExplanationGrey
+      - DPIA

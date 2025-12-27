@@ -1,0 +1,1138 @@
+name: Process
+values:
+  Strategy_EnterpriseGovernance:
+    text:
+      nl: 01.1 Enterprise Governance
+      en: 01.1 Enterprise Governance
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Strategy
+  Strategy_StrategicPlanning:
+    text:
+      nl: 01.2 Strategische planning
+      en: 01.2 Strategic planning
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Strategy
+  Strategy_OrganizationManagement:
+    text:
+      nl: 01.3 Organisatiemanagement
+      en: 01.3 Organization management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Strategy
+  Strategy_EnterpriseRiskManagement:
+    text:
+      nl: 01.4 Enterprise risicomanagement
+      en: 01.4 Enterprise risk management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Strategy
+  Policy_TacticalPlanning:
+    text:
+      nl: 02.1 Tactische planning
+      en: 02.1 Tactical planning
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Policy
+  Policy_PolicyFormationAndEvaluation:
+    text:
+      nl: 02.2 Beleidsvorming en evaluatie
+      en: 02.2 Policy formation and evaluation
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Policy
+  Policy_ProductPortfolioManagement:
+    text:
+      nl: 02.3 Productportfoliomanagement
+      en: 02.3 Product portfolio management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Policy
+  Policy_EnterpriseArchitecture:
+    text:
+      nl: 02.4 Enterprise architectuur
+      en: 02.4 Enterprise architecture
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Policy
+  ChangeManagement_ProgramManagement:
+    text:
+      nl: 03.1 Programmamanagement
+      en: 03.1 Program management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ChangeManagement
+  ChangeManagement_Innovation:
+    text:
+      nl: 03.2 Innovatie
+      en: 03.2 Innovation
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ChangeManagement
+  ChangeManagement_ProgramAndProjectPortfolioManagement:
+    text:
+      nl: 03.3 Programma en projectportfoliomanagement
+      en: 03.3 Program and project portfolio management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ChangeManagement
+  ChangeManagement_ProjectManagement:
+    text:
+      nl: 03.4 Projectmanagement
+      en: 03.4 Project management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ChangeManagement
+  ImprovementManagement_QualityManagement:
+    text:
+      nl: 04.1 Kwaliteitsmanagement
+      en: 04.1 Quality management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ImprovementManagement
+  ImprovementManagement_ProcessManagement:
+    text:
+      nl: 04.2 Procesmanagement
+      en: 04.2 Process management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ImprovementManagement
+  ImprovementManagement_OperationalManagement:
+    text:
+      nl: 04.3 Operationeel management
+      en: 04.3 Operational management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ImprovementManagement
+  ImprovementManagement_PerformanceManagement:
+    text:
+      nl: 04.4 Performancemanagement
+      en: 04.4 Performance management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ImprovementManagement
+  Accountability_Accreditation:
+    text:
+      nl: 05.1 Accreditatie
+      en: 05.1 Accreditation
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Accountability
+  Accountability_ResearchQualityAssurance:
+    text:
+      nl: 05.2 Kwaliteitszorg onderzoek
+      en: 05.2 Research quality assurance
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Accountability
+  Accountability_OtherExternalReports:
+    text:
+      nl: 05.3 Overige externe rapportages
+      en: 05.3 Other external reports
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Accountability
+  Accountability_AnnualReporting:
+    text:
+      nl: 05.4 Jaarverslaglegging
+      en: 05.4 Annual reporting
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Accountability
+  Accountability_IntegralSafetySurveillance:
+    text:
+      nl: 05.5 Integrale veiligheidsbewaking
+      en: 05.5 Integral safety surveillance
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Accountability
+  Accountability_InternalReports:
+    text:
+      nl: 05.6 Interne rapportages
+      en: 05.6 Internal reports
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Accountability
+  EducationDevelopment_EducationalUnitEvaluation:
+    text:
+      nl: 06.1 Onderwijseenheidevaluatie
+      en: 06.1 Educational unit evaluation
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationDevelopment
+  EducationDevelopment_ProgramEvaluation:
+    text:
+      nl: 06.2 Opleidingevaluatie
+      en: 06.2 Program evaluation
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationDevelopment
+  EducationDevelopment_ProgramDevelopment:
+    text:
+      nl: 06.3 Opleidingontwikkeling
+      en: 06.3 Program development
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationDevelopment
+  EducationDevelopment_EducationalUnitDevelopment:
+    text:
+      nl: 06.4 Onderwijseenheidontwikkeling
+      en: 06.4 Educational unit development
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationDevelopment
+  EducationDevelopment_EducationalMaterialDisclosure:
+    text:
+      nl: 06.5 Onderwijsmateriaalontsluiting
+      en: 06.5 Educational material disclosure
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationDevelopment
+  EducationExecution_ApplicationOfDidacticWorkForm:
+    text:
+      nl: 07.1 Toepassing didactische werkvorm
+      en: 07.1 Application of didactic work form
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationExecution
+  EducationExecution_ProgressMonitoring:
+    text:
+      nl: 07.2 Voortgangsbewaking
+      en: 07.2 Progress monitoring
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationExecution
+  EducationExecution_ApplicationOfLearningMaterials:
+    text:
+      nl: 07.3 Toepassing leermaterialen
+      en: 07.3 Application of learning materials
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationExecution
+  EducationExecution_EducationExecutionEvaluation:
+    text:
+      nl: 07.4 Onderwijsuitvoeringsevaluatie
+      en: 07.4 Education execution evaluation
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationExecution
+  EducationExecution_EducationExecutionGuidance:
+    text:
+      nl: 07.5 Onderwijsuitvoeringsbegeleiding
+      en: 07.5 Education execution guidance
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationExecution
+  EducationExecution_PreparationOfEducationExecution:
+    text:
+      nl: 07.6 Voorbereiding onderwijsuitvoering
+      en: 07.6 Preparation of education execution
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationExecution
+  Assessment_DeterminationOfAcquiredCompetencies:
+    text:
+      nl: 08.1 Vaststelling verworven competenties
+      en: 08.1 Determination of acquired competencies
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Assessment
+  Assessment_TestExecution:
+    text:
+      nl: 08.2 Toetsuitvoering
+      en: 08.2 Test execution
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Assessment
+  Assessment_TestEvaluation:
+    text:
+      nl: 08.3 Toetsbeoordeling
+      en: 08.3 Test evaluation
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Assessment
+  Assessment_TestPreparation:
+    text:
+      nl: 08.4 Toetsvoorbereiding
+      en: 08.4 Test preparation
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Assessment
+  ParticipantGuidance_StudyCareerGuidance:
+    text:
+      nl: 09.1 Studieloopbaanbegeleiding
+      en: 09.1 Study career guidance
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ParticipantGuidance
+  ParticipantGuidance_InternshipGuidance:
+    text:
+      nl: 09.2 Stagebegeleiding
+      en: 09.2 Internship guidance
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ParticipantGuidance
+  ParticipantGuidance_InternshipMatching:
+    text:
+      nl: 09.3 Stagematching
+      en: 09.3 Internship matching
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ParticipantGuidance
+  ParticipantRecruitment_MarketDevelopment:
+    text:
+      nl: 10.1 Marktbewerking
+      en: 10.1 Market development
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ParticipantRecruitment
+  ParticipantRecruitment_InformationProvision:
+    text:
+      nl: 10.2 Informatieverstrekking
+      en: 10.2 Information provision
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ParticipantRecruitment
+  ParticipantRecruitment_MarketResearch:
+    text:
+      nl: 10.3 Marktonderzoek
+      en: 10.3 Market research
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ParticipantRecruitment
+  ParticipantRecruitment_ProspectSupport:
+    text:
+      nl: 10.4 Prospectondersteuning
+      en: 10.4 Prospect support
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ParticipantRecruitment
+  Registration_ParticipantMatching:
+    text:
+      nl: 11.1 Deelnemermatching
+      en: 11.1 Participant matching
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Registration
+  Registration_ParticipantEnrollment:
+    text:
+      nl: 11.2 Deelnemersinschrijving
+      en: 11.2 Participant enrollment
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Registration
+  Registration_ParticipantDeregistration:
+    text:
+      nl: 11.3 Deelnemeruitschrijving
+      en: 11.3 Participant deregistration
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Registration
+  Registration_ParticipantReregistration:
+    text:
+      nl: 11.4 Deelnemerherinschrijving
+      en: 11.4 Participant re-registration
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Registration
+  Registration_ApplicationRegistration:
+    text:
+      nl: 11.5 Aanmeldregistratie
+      en: 11.5 Application registration
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Registration
+  EducationPlanning_EducationAdministration:
+    text:
+      nl: 12.1 Onderwijsadministratie
+      en: 12.1 Education administration
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationPlanning
+  EducationPlanning_DemandForecasting:
+    text:
+      nl: 12.2 Vraagprognotisering
+      en: 12.2 Demand forecasting
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationPlanning
+  EducationPlanning_ClassFormation:
+    text:
+      nl: 12.3 Lesgroepvorming
+      en: 12.3 Class formation
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationPlanning
+  EducationPlanning_DeploymentAndResourcePlanning:
+    text:
+      nl: 12.4 Inzet en middelenplanning
+      en: 12.4 Deployment and resource planning
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationPlanning
+  EducationPlanning_TestRegistration:
+    text:
+      nl: 12.5 Toetsinschrijving
+      en: 12.5 Test registration
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationPlanning
+  EducationPlanning_EducationalUnitRegistration:
+    text:
+      nl: 12.6 Onderwijseenheidinschrijving
+      en: 12.6 Educational unit registration
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationPlanning
+  EducationPlanning_EducationalActivitiesPlanning:
+    text:
+      nl: 12.7 Onderwijsactiviteitenplanning
+      en: 12.7 Educational activities planning
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =EducationPlanning
+  Scheduling_ScheduleChange:
+    text:
+      nl: 13.1 Roosterwijziging
+      en: 13.1 Schedule change
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Scheduling
+  Scheduling_TestScheduleConstruction:
+    text:
+      nl: 13.2 Toetsroosterconstructie
+      en: 13.2 Test schedule construction
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Scheduling
+  Scheduling_SchedulePublication:
+    text:
+      nl: 13.3 Roosterpublicatie
+      en: 13.3 Schedule publication
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Scheduling
+  Scheduling_LessonScheduleConstruction:
+    text:
+      nl: 13.4 Lesroosterconstructie
+      en: 13.4 Lesson schedule construction
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Scheduling
+  Certification_QualificationControl:
+    text:
+      nl: 14.1 Kwalificatiecontrole
+      en: 14.1 Qualification control
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Certification
+  Certification_ValueDocumentProvision:
+    text:
+      nl: 14.2 Waardedocumentverstrekking
+      en: 14.2 Value document provision
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Certification
+  Certification_BindingStudyAdvice:
+    text:
+      nl: 14.3 Bindend studieadvies
+      en: 14.3 Binding study advice
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =Certification
+  ParticipantCounseling_LaborMarketGuidance:
+    text:
+      nl: 15.1 Arbeidsmarktbegeleiding
+      en: 15.1 Labor market guidance
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ParticipantCounseling
+  ParticipantCounseling_StudyChoiceGuidance:
+    text:
+      nl: 15.2 Studiekeuzebegeleiding
+      en: 15.2 Study choice guidance
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ParticipantCounseling
+  ParticipantCounseling_PersonalSituationGuidance:
+    text:
+      nl: 15.3 Persoonlijke situatiebegeleiding
+      en: 15.3 Personal situation guidance
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ParticipantCounseling
+  ResearchDevelopment_ResearchPlanning:
+    text:
+      nl: 16.1 Onderzoeksplanning
+      en: 16.1 Research planning
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchDevelopment
+  ResearchDevelopment_ResearchEvaluation:
+    text:
+      nl: 16.2 Onderzoeksevaluatie
+      en: 16.2 Research evaluation
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchDevelopment
+  ResearchDevelopment_ResearchQuestionIdentification:
+    text:
+      nl: 16.3 Onderzoeksvraagidentificatie
+      en: 16.3 Research question identification
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchDevelopment
+  ResearchDevelopment_ResearchAssessment:
+    text:
+      nl: 16.4 Onderzoekstoetsing
+      en: 16.4 Research assessment
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchDevelopment
+  ResearchDevelopment_ResearchDesignDevelopment:
+    text:
+      nl: 16.5 Onderzoeksopzetontwikkeling
+      en: 16.5 Research design development
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchDevelopment
+  ResearchDevelopment_FundingAcquisition:
+    text:
+      nl: 16.6 Financieringswerving
+      en: 16.6 Funding acquisition
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchDevelopment
+  ResearchDevelopment_ResearchPartnering:
+    text:
+      nl: 16.7 Onderzoekspartnering
+      en: 16.7 Research partnering
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchDevelopment
+  ResearchExecution_ResearchProtocolAssessment:
+    text:
+      nl: 17.1 Onderzoeksprotocoltoetsing
+      en: 17.1 Research protocol assessment
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchExecution
+  ResearchExecution_DataProcessingAndAnalysis:
+    text:
+      nl: 17.2 Gegevensverwerking en analyse
+      en: 17.2 Data processing and analysis
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchExecution
+  ResearchExecution_DataCollection:
+    text:
+      nl: 17.3 Gegevenscollectie
+      en: 17.3 Data collection
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchExecution
+  ResearchExecution_PhDSupervision:
+    text:
+      nl: 17.4 Promovendusbegeleiding
+      en: 17.4 PhD supervision
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchExecution
+  ResearchDissemination_PeerReview:
+    text:
+      nl: 18.1 Collegiale toetsing
+      en: 18.1 Peer review
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchDissemination
+  ResearchDissemination_ResearchResultSafeguarding:
+    text:
+      nl: 18.2 Onderzoeksresultaatborging
+      en: 18.2 Research result safeguarding
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchDissemination
+  ResearchDissemination_DisseminationCreation:
+    text:
+      nl: 18.3 Disseminatiecreatie
+      en: 18.3 Dissemination creation
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchDissemination
+  ResearchServices_FundingSupport:
+    text:
+      nl: 19.1 Financieringsondersteuning
+      en: 19.1 Funding support
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchServices
+  ResearchServices_ResearchObjectAcquisition:
+    text:
+      nl: 19.2 Onderzoeksobjectwerving
+      en: 19.2 Research object acquisition
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchServices
+  ResearchServices_ResearchDataManagement:
+    text:
+      nl: 19.3 Onderzoeksdatamanagement
+      en: 19.3 Research data management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchServices
+  ResearchServices_ResearchRegistration:
+    text:
+      nl: 19.4 Onderzoeksregistratie
+      en: 19.4 Research registration
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchServices
+  ResearchServices_PermitAcquisition:
+    text:
+      nl: 19.5 Vergunningsverwerving
+      en: 19.5 Permit acquisition
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ResearchServices
+  HumanResourceManagement_EmployeeAdministration:
+    text:
+      nl: 20.1 Medewerkersadministratie
+      en: 20.1 Employee administration
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =HumanResourceManagement
+  HumanResourceManagement_EmployeeDevelopment:
+    text:
+      nl: 20.2 Medewerkersontwikkeling
+      en: 20.2 Employee development
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =HumanResourceManagement
+  HumanResourceManagement_SicknessAndLeaveAdministration:
+    text:
+      nl: 20.3 Ziekte en verlofadministratie
+      en: 20.3 Sickness and leave administration
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =HumanResourceManagement
+  HumanResourceManagement_FormationPlanning:
+    text:
+      nl: 20.4 Formatieplanning
+      en: 20.4 Formation planning
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =HumanResourceManagement
+  HumanResourceManagement_RecruitmentAndSelection:
+    text:
+      nl: 20.5 Werving en selectie
+      en: 20.5 Recruitment and selection
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =HumanResourceManagement
+  HumanResourceManagement_SalaryAndExpenseProcessing:
+    text:
+      nl: 20.6 Salaris en declaratieverwerking
+      en: 20.6 Salary and expense processing
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =HumanResourceManagement
+  HumanResourceManagement_EmployeeAssessment:
+    text:
+      nl: 20.7 Medewerkerbeoordeling
+      en: 20.7 Employee assessment
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =HumanResourceManagement
+  HumanResourceManagement_TimeRegistration:
+    text:
+      nl: 20.8 Tijdregistratie
+      en: 20.8 Time registration
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =HumanResourceManagement
+  FinancialManagement_Invoicing:
+    text:
+      nl: 21.1 Facturering
+      en: 21.1 Invoicing
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FinancialManagement
+  FinancialManagement_DebtorManagement:
+    text:
+      nl: 21.2 Debiteurenbeheer
+      en: 21.2 Debtor management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FinancialManagement
+  FinancialManagement_BudgetConstruction:
+    text:
+      nl: 21.3 Begrotingsconstructie
+      en: 21.3 Budget construction
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FinancialManagement
+  FinancialManagement_Payments:
+    text:
+      nl: 21.4 Betalingen
+      en: 21.4 Payments
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FinancialManagement
+  FinancialManagement_WealthManagement:
+    text:
+      nl: 21.5 Vermogensbeheer
+      en: 21.5 Wealth management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FinancialManagement
+  FinancialManagement_CreditorManagement:
+    text:
+      nl: 21.6 Crediteurenbeheer
+      en: 21.6 Creditor management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FinancialManagement
+  FinancialManagement_AssetManagement:
+    text:
+      nl: 21.7 Activabeheer
+      en: 21.7 Asset management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FinancialManagement
+  FinancialManagement_GeneralLedgerManagement:
+    text:
+      nl: 21.8 Grootboekbeheer
+      en: 21.8 General ledger management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FinancialManagement
+  FacilityManagement_GoodsHandling:
+    text:
+      nl: 22.1 Goederenafhandeling
+      en: 22.1 Goods handling
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FacilityManagement
+  FacilityManagement_WasteManagement:
+    text:
+      nl: 22.2 Afvalbeheer
+      en: 22.2 Waste management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FacilityManagement
+  FacilityManagement_RealEstateDevelopment:
+    text:
+      nl: 22.3 Vastgoedontwikkeling
+      en: 22.3 Real estate development
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FacilityManagement
+  FacilityManagement_BuildingManagement:
+    text:
+      nl: 22.4 Gebouwbeheer
+      en: 22.4 Building management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FacilityManagement
+  FacilityManagement_DocumentHandlingAndArchiving:
+    text:
+      nl: 22.5 Documentafhandeling en archivering
+      en: 22.5 Document handling and archiving
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FacilityManagement
+  FacilityManagement_Cleaning:
+    text:
+      nl: 22.6 Schoonmaak
+      en: 22.6 Cleaning
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FacilityManagement
+  FacilityManagement_CateringManagement:
+    text:
+      nl: 22.7 Cateringbeheer
+      en: 22.7 Catering management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FacilityManagement
+  FacilityManagement_BuildingSecurity:
+    text:
+      nl: 22.8 Gebouwbeveiliging
+      en: 22.8 Building security
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FacilityManagement
+  FacilityManagement_EmergencyResponse:
+    text:
+      nl: 22.9 Bedrijfshulpverlening
+      en: 22.9 Emergency response
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =FacilityManagement
+  ProcurementManagement_ContractManagement:
+    text:
+      nl: 23.1 Contractbeheer
+      en: 23.1 Contract management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ProcurementManagement
+  ProcurementManagement_SupplierManagement:
+    text:
+      nl: 23.2 Leveranciersbeheer
+      en: 23.2 Supplier management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ProcurementManagement
+  ProcurementManagement_Ordering:
+    text:
+      nl: 23.3 Bestellen
+      en: 23.3 Ordering
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ProcurementManagement
+  ProcurementManagement_Tendering:
+    text:
+      nl: 23.4 Aanbesteden
+      en: 23.4 Tendering
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ProcurementManagement
+  ContactManagement_RelationshipManagement:
+    text:
+      nl: 24.1 Relatiebeheer
+      en: 24.1 Relationship management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ContactManagement
+  ContactManagement_ServiceManagement:
+    text:
+      nl: 24.2 Servicemanagement
+      en: 24.2 Service management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ContactManagement
+  ContactManagement_AlumniManagement:
+    text:
+      nl: 24.3 Alumnibeheer
+      en: 24.3 Alumni management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ContactManagement
+  ContactManagement_ContactManagement:
+    text:
+      nl: 24.4 Contactbeheer
+      en: 24.4 Contact management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =ContactManagement
+  LegalManagement_LegalAdvising:
+    text:
+      nl: 25.1 Juridisch adviseren
+      en: 25.1 Legal advising
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =LegalManagement
+  LegalManagement_ComplaintHandling:
+    text:
+      nl: 25.2 Klachtenafhandeling
+      en: 25.2 Complaint handling
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =LegalManagement
+  LegalManagement_LegalProtection:
+    text:
+      nl: 25.3 Juridische bescherming
+      en: 25.3 Legal protection
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =LegalManagement
+  LegalManagement_HandlingObjectionsAndAppeals:
+    text:
+      nl: 25.4 Afhandelen bezwaren en beroepen
+      en: 25.4 Handling objections and appeals
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =LegalManagement
+  LegalManagement_ComplianceManagement:
+    text:
+      nl: 25.5 Compliancebeheer
+      en: 25.5 Compliance management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =LegalManagement
+  InformationTechnologyManagement_ApplicationManagement:
+    text:
+      nl: 26.1 Applicatiebeheer
+      en: 26.1 Application management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =InformationTechnologyManagement
+  InformationTechnologyManagement_InformationManagement:
+    text:
+      nl: 26.2 Informatiemanagement
+      en: 26.2 Information management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =InformationTechnologyManagement
+  InformationTechnologyManagement_ApplicationDevelopment:
+    text:
+      nl: 26.3 Applicatieontwikkeling
+      en: 26.3 Application development
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =InformationTechnologyManagement
+  InformationTechnologyManagement_DataManagement:
+    text:
+      nl: 26.4 Gegevensbeheer
+      en: 26.4 Data management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =InformationTechnologyManagement
+  InformationTechnologyManagement_FunctionalManagement:
+    text:
+      nl: 26.5 Functioneel beheer
+      en: 26.5 Functional management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =InformationTechnologyManagement
+  InformationTechnologyManagement_ITInfrastructureDevelopment:
+    text:
+      nl: 26.6 IT infrastructuurontwikkeling
+      en: 26.6 IT infrastructure development
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =InformationTechnologyManagement
+  InformationTechnologyManagement_IdentityManagement:
+    text:
+      nl: 26.7 Identiteitenbeheer
+      en: 26.7 Identity management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =InformationTechnologyManagement
+  InformationTechnologyManagement_ITInfrastructureManagement:
+    text:
+      nl: 26.8 IT infrastructuurbeheer
+      en: 26.8 IT infrastructure management
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =InformationTechnologyManagement
+  InformationTechnologyManagement_InformationSecurity:
+    text:
+      nl: 26.9 Informatiebeveiliging
+      en: 26.9 Information security
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =InformationTechnologyManagement
+  CommunicationManagement_ImageDevelopment:
+    text:
+      nl: 27.1 Imago ontwikkeling
+      en: 27.1 Image development
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =CommunicationManagement
+  CommunicationManagement_ExternalCommunication:
+    text:
+      nl: 27.2 Externe communicatie
+      en: 27.2 External communication
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =CommunicationManagement
+  CommunicationManagement_InternalCommunication:
+    text:
+      nl: 27.3 Interne communicatie
+      en: 27.3 Internal communication
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =CommunicationManagement
+  KnowledgeUtilization_KnowledgeProtection:
+    text:
+      nl: 28.1 Kennisbescherming
+      en: 28.1 Knowledge protection
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =KnowledgeUtilization
+  KnowledgeUtilization_KnowledgeTransfer:
+    text:
+      nl: 28.2 Kennisoverdracht
+      en: 28.2 Knowledge transfer
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =KnowledgeUtilization
+  KnowledgeUtilization_KnowledgeCommercialization:
+    text:
+      nl: 28.3 Kennisvermarkting
+      en: 28.3 Knowledge commercialization
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =KnowledgeUtilization
+  InformationTransfer_DigitalMaterialDisclosure:
+    text:
+      nl: 29.1 Ontsluiting digitaal materiaal
+      en: 29.1 Digital material disclosure
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =InformationTransfer
+  InformationTransfer_PhysicalMaterialDisclosure:
+    text:
+      nl: 29.2 Ontsluiting fysiek materiaal
+      en: 29.2 Physical material disclosure
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =InformationTransfer
+  InformationTransfer_InformationLiteracySupport:
+    text:
+      nl: 29.3 Informatievaardigheidsondersteuning
+      en: 29.3 Information literacy support
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =InformationTransfer
+  InformationTransfer_DigitalDatabaseDisclosure:
+    text:
+      nl: 29.4 Ontsluiting digitale databanken
+      en: 29.4 Digital database disclosure
+    condition:
+      value:
+        property: BusinessFunction
+        equal: =InformationTransfer

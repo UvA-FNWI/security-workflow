@@ -1,0 +1,99 @@
+name: Classification
+title:
+  en: Classification
+  nl: Classificatie
+layout: SinglePage
+
+pages:
+  - name: Availability
+    title:
+      en: Availability
+      nl: Beschikbaarheid
+    introduction: 
+      en: |
+        Availability (or continuity) refers to the need for information to be available and accessible.
+        In the context of availability, it is advisable to consider the possible consequences if information is not available.
+        How significant is the loss caused if the information system is unavailable for a certain period of time?
+        
+        - Low: overall loss or unavailability of this information for longer than 2 days will cause some noticeable (measurable) loss.
+        - Medium: overall loss or unavailability of this information for one to two 2 days may cause serious direct/indirect loss.
+        - High: overall loss or unavailability of this information for less than one day may cause significant or very significant loss.
+      nl: |
+        Bij beschikbaarheid (of continuïteit) gaat het erom dat informatie beschikbaar en toegankelijk moet zijn.
+        In het kader van beschikbaarheid is het goed te kijken naar de mogelijke gevolgen als informatie niet beschikbaar is. 
+        
+        - Laag:	algeheel verlies of niet beschikbaar zijn van deze informatie gedurende langer dan 2 dagen brengt enige merkbare (meetbare) schade toe.
+        - Midden: algeheel verlies of niet beschikbaar zijn van deze informatie gedurende één tot twee dagen kan serieuze (in)directe schade toebrengen.
+        - Hoog: algeheel verlies of niet beschikbaar zijn van deze informatie gedurende korter dan één dag kan (zeer) grote schade toebrengen.
+    layout: Condensed
+    fields:
+      - AvailabilityProcess
+      - AvailabilityReputation
+      - AvailabilityCosts
+      - AvailabilityDependencies
+      - AvailabilityExplanation
+      - Availability
+
+  - name: Integrity
+    title:
+      en: Integrity
+      nl: Integriteit
+    introduction: 
+      en: |
+        Integrity is about information being consistent with reality (the information being accurate, complete and current).
+        Proper management of authorisations and opportunities to change, add or destroy data for a defined group of authorised users is crucial for information integrity (authorisation management).
+        In the context of integrity, it is important to assess the potential consequences of errors in data. This applies to both intentional errors (or fraud) and unintentional errors.
+        Key concepts are accuracy and completeness.
+        
+        - Low: the process allows some integrity errors. Changes to information are barely harmful, if at all.
+        - Medium: the process allows very few integrity errors. Inaccuracies can cause serious direct/indirect loss
+        - High: the process allows no integrity errors. Incorrect information can cause significant or very significant loss.
+      nl: |
+        Bij integriteit gaat het erom dat informatie in overeenstemming is met de werkelijkheid (informatie is juist, volledig en actueel).
+        Het goed beheer van bevoegdheden en mogelijkheden tot muteren, toevoegen, of vernietigen van gegevens voor een gedefinieerde groep gerechtigden is cruciaal voor de integriteit van informatie (autorisatiebeheer).
+        In het kader van integriteit is het van belang te beoordelen wat de gevolgen kunnen zijn van fouten in gegevens. Dit geldt zowel voor opzettelijke fouten (of fraude) als onopzettelijke fouten. Kernbegrippen zijn juistheid en volledigheid.
+        
+        - Laag: het proces staat enkele integriteitsfouten toe. Wijzigingen van informatie zijn niet of nauwelijks schadelijk.
+        - Midden: het proces staat zeer weinig integriteitsfouten toe. Onjuistheden kunnen serieuze (in)directe schade toebrengen
+        - Hoog:	het proces staat geen integriteitsfouten toe. Incorrecte informatie kan (zeer) grote schade toebrengen.
+    layout: Condensed
+    fields:
+      - IntegrityFinance
+      - IntegrityReputation
+      - IntegrityConfidence
+      - IntegrityFraud
+      - IntegrityDependencies
+      - IntegrityExplanation
+      - Integrity
+
+  - name: Confidentiality
+    title:
+      en: Confidentiality
+      nl: Vertrouwelijkheid
+    introduction: 
+      en: |
+        Confidentiality is about ensuring that information does not get into the hands of third parties who are not authorised to have it.
+        To determine whether information is confidential, and how confidential it is, it is important to know the consequences of unplanned or unauthorised access to information, disclosure of information.
+        In this context, 'information' obviously includes personal data of UvA and HvA employees and students.
+        
+        - Low: information can only be accessed by persons associated with the institution. A select group is allowed to change this data. Confidentiality breaches may cause some direct/indirect loss.
+        - Medium: information is only accessible to a limited group of users. Only users with elevated rights are allowed to modify data. Confidentiality breaches may cause serious direct/indirect loss.
+        - High: highly confidential information, accessible only to specifically named individuals. Confidentiality breaches will cause significant direct/indirect loss.
+      nl: |
+        Bij vertrouwelijkheid gaat het erom dat informatie niet in handen komt van derden die hiertoe niet zijn bevoegd.
+        Om te bepalen of en hoe vertrouwelijk informatie is, is het van belang te weten wat de consequenties zijn van ongeplande of ongeautoriseerde toegang, openbaarmaking of bekend worden van informatie.
+        Onder informatie worden hier natuurlijk ook persoonsgegevens verstaan van medewerkers en studenten van de UvA en de HvA.
+        
+        - Laag: informatie is alleen toegankelijk voor aan de instelling verbonden personen. Een selecte groep mag deze gegevens wijzigen. Schending van vertrouwelijkheid kan enige (in)directe schade toebrengen.
+        - Midden: informatie is alleen toegankelijk voor een beperkte groep gebruikers. Alleen gebruikers met verhoogde rechten mogen gegevens wijzigen. Schending van vertrouwelijkheid kan serieuze (in)directe schade toebrengen
+        - Hoog: zeer vertrouwelijke informatie, alleen toegankelijk voor specifiek benoemde personen. Schending van vertrouwelijkheid brengt grote (in)directe schade toe.
+
+    layout: Condensed
+    fields:
+      - ConfidentialitySensitivity
+      - ConfidentialityReputation
+      - ConfidentialityConfidence
+      - ConfidentialityFraud
+      - ConfidentialityFinance
+      - ConfidentialityExplanation
+      - Confidentiality

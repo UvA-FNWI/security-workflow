@@ -1,0 +1,38 @@
+name: Base
+title: Details
+pages:
+  - name: BasicDetails
+    title:
+      en: Basic details
+      nl: Basisgegevens
+    fields:
+      - Name
+      - Type
+      - BusinessFunction
+      - Process
+      - Description
+      - OwnerRole
+      - Owner
+      - Editors
+      - Stakeholders
+      - Institution
+      - OrgUnit
+      - Institute
+      - Architecture
+      - Hosting
+      - Hostnames
+  - name: Data
+    fields:
+      - PersonalData
+      - Subjects
+      - NumberOfSubjects
+      - DataType
+      - DataMinimisation
+      - NumberOfAdmins
+      - ExternalParties
+      - Location
+      - TransferMechanism
+  - name: Workshop
+    fields:
+      - WorkshopDate
+      - WorkshopParticipants

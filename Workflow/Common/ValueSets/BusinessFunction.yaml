@@ -1,0 +1,118 @@
+name: BusinessFunction
+values:
+  Strategy:
+    text:
+      nl: 01. Strategie en governance
+      en: 01. Strategy and governance
+  Policy:
+    text:
+      nl: 02. Beleid en planvorming
+      en: 02. Policy and planning
+  ChangeManagement:
+    text:
+      nl: 03. Verandermanagement
+      en: 03. Change management
+  ImprovementManagement:
+    text:
+      nl: 04. Verbetermanagement
+      en: 04. Improvement management
+  Accountability:
+    text:
+      nl: 05. Verantwoording
+      en: 05. Accountability
+  EducationDevelopment:
+    text:
+      nl: 06. Onderwijsontwikkeling
+      en: 06. Education development
+  EducationExecution:
+    text:
+      nl: 07. Onderwijsuitvoering
+      en: 07. Education execution
+  Assessment:
+    text:
+      nl: 08. Toetsing
+      en: 08. Assessment
+  ParticipantGuidance:
+    text:
+      nl: 09. Deelnemersbegeleiding
+      en: 09. Participant guidance
+  ParticipantRecruitment:
+    text:
+      nl: 10. Deelnemerwerving
+      en: 10. Participant recruitment
+  Registration:
+    text:
+      nl: 11. Inschrijving
+      en: 11. Registration
+  EducationPlanning:
+    text:
+      nl: 12. Onderwijsplanning
+      en: 12. Education planning
+  Scheduling:
+    text:
+      nl: 13. Roostering
+      en: 13. Scheduling
+  Certification:
+    text:
+      nl: 14. Diplomering
+      en: 14. Certification
+  ParticipantCounseling:
+    text:
+      nl: 15. Deelnemercounseling
+      en: 15. Participant counseling
+  ResearchDevelopment:
+    text:
+      nl: 16. Onderzoeksontwikkeling
+      en: 16. Research development
+  ResearchExecution:
+    text:
+      nl: 17. Onderzoeksuitvoering
+      en: 17. Research execution
+  ResearchDissemination:
+    text:
+      nl: 18. Onderzoeksdisseminatie
+      en: 18. Research dissemination
+  ResearchServices:
+    text:
+      nl: 19. Onderzoeksdienstverlening
+      en: 19. Research services
+  HumanResourceManagement:
+    text:
+      nl: 20. Human Resource Management
+      en: 20. Human Resource Management
+  FinancialManagement:
+    text:
+      nl: 21. Financieel management
+      en: 21. Financial management
+  FacilityManagement:
+    text:
+      nl: 22. Facilitair management
+      en: 22. Facility management
+  ProcurementManagement:
+    text:
+      nl: 23. Inkoopmanagement
+      en: 23. Procurement management
+  ContactManagement:
+    text:
+      nl: 24. Contactmanagement
+      en: 24. Contact management
+  LegalManagement:
+    text:
+      nl: 25. Juridisch management
+      en: 25. Legal management
+  InformationTechnologyManagement:
+    text:
+      nl: 26. Informatie en technologiemanagement
+      en: 26. Information and technology management
+  CommunicationManagement:
+    text:
+      nl: 27. Communicatiemanagement
+      en: 27. Communication management
+  KnowledgeUtilization:
+    text:
+      nl: 28. Kennisuitnutting
+      en: 28. Knowledge utilization
+  InformationTransfer:
+    text:
+      nl: 29. Informatiedoorlevering
+      en: 29. Information transfer

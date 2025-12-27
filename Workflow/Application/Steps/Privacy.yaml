@@ -1,0 +1,335 @@
+name: Privacy
+title: Privacy
+
+condition: PersonalData
+
+actions:
+- type: Submit
+  form: Privacy
+  roles: [ISO, Editor]
+
+ends:
+  event: Privacy
+
+properties:
+  - name: Goal
+    text:
+      en: Goal of processing
+      nl: Doel van de verwerking
+    type: String!
+    layout: { multiline: true }
+  - name: LegalBasis
+    text:
+      en: Legal basis
+      nl: Wettelijke grondslag
+    description:
+      en: What is the underlying, legal substantiation  on the basis of which we may process the personal data?
+      nl: Wat is de onderliggende, juridische onderbouwing op basis waarvan we de persoonsgegevens mogen verwerken?
+    type: LegalBasis!
+    values:
+      PublicInterest:
+        text:
+          en: Public interest
+          nl: Algemeen belang
+      LegitimateInterest:
+        text:
+          en: Legitimate interest
+          nl: Gerechtvaardigd belang
+      LegalObligation:
+        text:
+          en: Legal obligation
+          nl: Wettelijke verplichting
+      Consent:
+        text:
+          en: Consent
+          nl: Toestemming
+      Contract:
+        text:
+          en: Performance of a contract
+          nl: Uitvoering van een overeenkomst
+  - name: SpecialCategories
+    text:
+      en: Are special categories of personal data being processed?
+      nl: Worden er bijzondere persoonsgegevens verwerkt?
+    type: YesNo!
+  - name: SpecialException
+    text:
+      en: Basis for exception special categories
+      nl: Uitzonderingsgrond bijzondere persoonsgegevens
+    description:
+      en: What is the basis for the exception to the ban on processing special personal data?
+      nl: Wat is de uitzonderingsgrond op het verwerkingsverbod van bijzondere persoonsgegevens?
+    type: String!
+    layout: { multiline: true }
+    condition:
+      value:
+        property: SpecialCategories
+        equal: =Yes
+  - name: Retention
+    text:
+      en: Retention periods
+      nl: Bewaartermijnen
+    description:
+      en: Personal data may not be retained for longer than is required for the specific purpose for which the personal data were collected. Therefore, indicate as specifically as possible the applicable retention period for each piece of personal data. Also describe how personal data will be deleted after the expiry of the retention period.
+      nl: Je mag persoonsgegevens niet langer bewaren dan nodig is voor het doel waarvoor de persoonsgegevens zijn verzameld. Geef daarom zo concreet mogelijk de geldende bewaartermijn aan per persoons-gegeven. Beschrijf ook hoe persoonsgegevens worden gewist na het verstrijken van de bewaartermijn.
+    type: String!
+    layout: { multiline: true }
+  - name: Transparency
+    text:
+      en: How will data subjects be informed?
+      nl: Hoe worden de betrokkenen geïnformeerd?
+    description:
+      en: Examples include privacy statements on websites; information in consent forms; information in invitations; information provided via email, etc.
+      nl: Denk aan privacy statements op websites; informatie op toestemmingsformulieren; informatie op uitnodigingen; informatie via email etc
+    type: String!
+    layout: { multiline: true }
+  - name: Quality
+    text:
+      en: Quality of the data
+      nl: Kwaliteit van de data
+    description:
+      en: Is a process in place to check and/or monitor the quality of the personal data (e.g. the extraction of personal data from a source system, periodic checks, dual control principle, a self-service option in SAP or SIS)?
+      nl: Is er een proces ingericht om de kwaliteit van de persoonsgegevens te checken en/of te monitoren (denk aan het afnemen van persoonsgegevens uit een bronsysteem, periodieke controles, vier-ogen principe, een zelfbedieningsmogelijkheid in SAP of SIS)?
+    type: String!
+    layout: { multiline: true }
+  - name: Risks
+    text:
+      en: Risks to data subjects
+      nl: Risico's voor de betrokkenen
+    description:
+      en: "What negative consequences could this processing have on the individuals whose personal data are being processed? Examples of this include: loss of control of personal data, exclusion, discrimination, identity theft or fraud, etc."
+      nl: "Welke negatieve gevolgen heeft deze verwerking mogelijk voor de personen wiens persoonsgegevens worden verwerkt? Denk hierbij bijv. aan: verlies van controle over persoonsgegevens, uitsluiting, discriminatie, identiteitsdiefstal- of fraude, etc."
+    type: String!
+    layout: { multiline: true }
+  - name: Measures
+    text:
+      en: What measures are already (being) implemented?
+      nl: Welke maatregelen zijn of worden al geïmplementeerd?
+    description:
+      en: Possible measures include encryption of personal data; pseudonymisation and/or anonymisation; authorisations; instructions for users and/or administrators.
+      nl: Denk aan versleuteling van persoonsgegevens; pseudonimisering en/of anonimisering; autorisaties; instructies voor gebruikers en/of beheerders.
+    type: String!
+    layout: { multiline: true }
+  - name: LegalBasisExplanation
+    type: String
+    text:
+      en: Explanation legal basis
+      nl: Toelichting grondslag
+    layout: { multiline: true }
+  - name: PartiesInvolved
+    text:
+      nl: Betrokken partijen
+      en: Involved parties
+    description:
+      en: "Which parties are involved in the processing? Indicate in the explanation which parties are internal or external to the institution (e.g. suppliers)."
+      nl: "Welke partijen zijn betrokken bij de verwerking? Geef in de toelichting aan welke partijen intern of extern aan de instelling zijn (bijvoorbeeld leveranciers)."
+    type: '[InvolvedParty]'
+
+  - name: BlackList
+    text: 
+      en: Indicate if the application includes any of the following
+      nl: Geef aan of een van onderstaande onderdeel is van de toepassing
+    type: "[BlackList]!"
+    layout: 
+      type: RadioList
+    description: 
+      en: |
+        See [this document](https://autoriteitpersoonsgegevens.nl/uploads/imported/stcrt-2019-64418.pdf) for more details about the categories.
+        If the answer is 'Yes', a DPIA is compulsory.
+      nl: |
+        Zie [dit document](https://autoriteitpersoonsgegevens.nl/uploads/imported/stcrt-2019-64418.pdf) voor meer details over de categorieën.
+        Als het antwoord 'Ja' is, dan is een DPIA verplicht.
+    values:
+      Camera:
+        text:
+          en: (Flexible) camera surveillance
+          nl: (Flexibel) cameratoezicht
+      EmployeeMonitoring:
+        text:
+          en: Employee monitoring
+          nl: Monitoring van medewerkers
+      LocationData:
+        text: 
+          en: Location data
+          nl: Locatiegegevens
+      CommunicationData:
+        text:
+          en: Communication data
+          nl: Communicatiegegevens
+      Profiling: {}
+      Collaboration:
+        text:
+          en: Collaborative partnerships
+          nl: Samenwerkingsverbanden
+      Health:
+        text: 
+          en: Health data
+          nl: Gezondheidsgegevens
+      Financial:
+        text:
+          en: Financial situation
+          nl: Financiële situatie
+      IoT:
+        text: Internet of Things
+      Biometric:
+        text: 
+          en: Biometric data
+          nl: Biometrische gegevens
+      Genetic:
+        text:
+          en: Genetic data
+          nl: Genetische gegevens
+      Covert:
+        text:
+          en: Covert investigations
+          nl: Heimelijk onderzoek
+      Observation:
+        text:
+          en: Observation and influencing of behaviour
+          nl: Observatie en beïnvloeding van gedrag
+      Credit:
+        text:
+          en: Credit scores
+          nl: Creditscores
+      Fraud:
+        text:
+          en: Fraud prevention
+          nl: Fraudebestijding
+      BlackLists:
+        text:
+          en: Blacklists
+          nl: Zwarte lijsten
+      None:
+        text:
+          en: None of the above
+          nl: Geen van bovenstaande
+        
+  - name: ExplanationBlack
+    text:
+      en: Explanation
+      nl: Toelichting
+    type: String
+    layout:
+      multiline: true
+      
+  - name: GreyList
+    text:
+      en: Indicate which of the following apply to this application
+      nl: Geef aan welke van de volgende van toepassing zijn
+    type: "[GreyList]!"
+    layout: 
+      type: RadioList
+    description: 
+      en: If at least two of these are the case, a DPIA is compulsory.
+      nl: Als er twee of meer van deze van toepassing zijn, is een DPIA verplicht.
+    values:
+      Characteristics:
+        text: 
+          en: People are judged on the basis of personal characteristics
+          nl: Mensen worden beoordeeld op basis van persoonskenmerken
+        description:
+          en: This includes profiling and making forecasts, especially based on characteristics such as a person's job performance, economic situation, health, personal preferences or interests, reliability or behaviour, location or travel.
+          nl: Het gaat hierbij onder meer om profiling en het maken van prognoses, met name op basis van kenmerken als iemands beroepsprestaties, economische situatie, gezondheid, persoonlijke voorkeuren of interesses, betrouwbaar-heid of gedrag, locatie of verplaatsingen.
+      Profiling:
+        text: 
+          en: Automated decisions are made (profiling)
+          nl: Geautomatiseerde beslissingen worden genomen (profiling)
+        description: 
+          en: These are decisions that have legal consequences or substantial consequences for the data subject. Such data processing could – for example – lead to people being excluded or discriminated against. Data processing operations with little or no consequences for people do not fall under this criterion.
+          nl: Het gaat hierbij om beslissingen die voor de betrokkene rechtsgevolgen of wezenlijke gevolgen hebben. Zo’n gegevensverwerking kan er bijvoorbeeld toe leiden dat mensen worden uitgesloten of gediscrimineerd. Gegevensverwerkingen met geringe of geen gevolgen voor mensen vallen niet onder dit criterium.
+      Monitoring:
+        text:
+          en: Systematic and large-scale monitoring
+          nl: Systematische en grootschalige monitoring
+        description:
+          en: This refers to monitoring of publicly accessible spaces, for example with camera surveillance. Here, personal data may be collected without data subjects knowing who is collecting their data and what happens to it afterwards. Moreover, it may be impossible for people to evade such data processing in public places.
+          nl: Het gaat hierbij om monitoring van openbaar toegankelijke ruimten, bijvoorbeeld met cameratoezicht. Hierbij kunnen persoonsgegevens worden verzameld zonder dat betrokkenen weten wie hun gegevens verzamelt en wat daar vervolgens mee gebeurt. Bovendien kan het onmogelijk zijn voor mensen om zich in openbare ruimten aan deze gegevensverwerking te onttrekken.
+      Sensitive:
+        text: 
+          en: Sensitive personal data is being processed
+          nl: Gevoelige persoonsgegevens worden verwerkt
+        description:
+          en: These are special categories of personal data (race/ethnicity, political views, religion, trade union, health, sexual behaviour/targeting, genetic/biometric data), and also include data that are generally considered privacy-sensitive, such as electronic communication data, location data and financial data.
+          nl: Het gaat hierbij om bijzondere categorieën van persoonsgegevens (ras / etniciteit, politieke opvattingen, religie, vakbond, gezondheid, seksueel gedrag/gerichtheid, genetische/biometrische gegevens) en het gaat hier ook om gegevens die over het algemeen als privacygevoelig worden beschouwd, zoals gegevens over elektronische communicatie, locatiegegevens en financiële gegevens.
+      LargeScale:
+        text:
+          en: Large-scale processing of data
+          nl: Grootschalige dataverwerking
+        description: 
+          en: |
+            The GDPR does not provide a definition of 'large-scale data processing'. The following criteria help determine whether the processing is large-scale:
+            
+            - The number of people whose data is processed (more than 1,000);
+            - The amount of data and/or variety of data being processed;
+            - The duration of the data processing (several years);
+            - The geographical scope of the data processing.
+          nl: |
+            De AVG geeft geen definitie van ‘grootschalige gegevensverwerkingen’. De volgende criteria helpen bij het bepalen of de verwerking grootschalig is:
+            - De hoeveelheid mensen van wie gegevens worden verwerkt (meer dan 1000);
+            - De hoeveelheid gegevens en/of de verscheidenheid aan gegevens die worden verwerkt;
+            - De tijdsduur van de gegevensverwerking (meerdere jaren);
+            - De geografische reikwijdte van de gegevensverwerking.
+
+      Linked:
+        text: 
+          en: Linked databases
+          nl: Gekoppelde databases
+        description:
+          en: These are data sets that are linked or combined with each other, from which new insights are subsequently extracted. For example, databases resulting from two or more different data processing operations with different purposes and/or carried out by different controllers, in a way that data subjects could not reasonably expect.
+          nl: Het gaat hierbij om gegevensverzamelingen die aan elkaar gekoppeld of met elkaar gecombineerd zijn, waar vervolgens nieuwe inzichten uit worden gehaald. Bijvoorbeeld databases die voortkomen uit twee of meer verschillende gegevensverwerkingen met verschillende doelen en/of uitgevoerd door verschillende verantwoordelijken, op een manier die betrokkenen niet redelijkerwijs kunnen verwachten.
+      Vulnerable:
+        text:
+          en: Personal data of vulnerable people is processed
+          nl: Persoonsgegevens van kwetsbare personen worden verwerkt
+        description: 
+          en: When processing this type of data, a DPIA may be necessary because there is an unequal balance of power between the data subject and the controller. As a result, data subjects cannot freely consent to or refuse to consent to the processing of their data. These may include – for example – employees, children and patients.
+          nl: Bij het verwerken van dit type gegevens kan een DPIA nodig zijn omdat er sprake is van een ongelijke machtsverhouding tussen de betrokkene en de verantwoordelijke. Dit heeft als gevolg dat betrokkenen niet in vrijheid toestemming kunnen geven of weigeren voor het verwerken van hun gegevens. Het kan hierbij om bijvoorbeeld werknemers, kinderen en patiënten gaan.
+      NewTech:
+        text:
+          en: New technologies are used
+          nl: Nieuwe technologieën worden ingezet
+        description: 
+          en: The question here is not whether the technology is new to UvA, but whether it is a new technology whose personal or societal impact are not known to UvA yet. Some 'Internet of Things' applications, for example, can have a major impact on people's daily lives and privacy, in connection with which a DPIA is required.
+          nl: Hierbij gaat het er niet om of de technologie nieuw is voor de UvA, maar of het  een nieuwe technologie betreft waarvan de UvA nog niet weet wat de persoonlijke of maatschappelijke gevolgen zijn. Sommige ‘Internet of Things’-toepassingen bijvoorbeeld, kunnen een grote impact hebben op het dagelijks leven en de privacy van mensen, waardoor een DPIA nodig is.
+      Blocking:
+        text:
+          en: Blocking of a right, service or contract
+          nl: Blokkeren van een recht, dienst of contract 
+        description: 
+          en: |
+            These are data processing operations that result in data subjects:
+            
+            -	Being unable to exercise a right or;
+            -	Being unable to make use of a service or;
+            -	Being unable to enter into a contract.
+            
+            For example, a bank processing personal data to determine whether they are prepared to grant someone a loan.
+          nl: |
+            Het gaat hierbij om gegevensverwerkingen die tot gevolg hebben dat betrokkenen:
+            
+            - Een recht niet kunnen uitoefenen of;
+            - Een dienst niet kunnen gebruiken of;
+            - Een contract niet kunnen afsluiten.
+            
+            Bijvoorbeeld een bank die persoonsgegevens verwerkt om te bepalen of zij een lening aan iemand willen verstrekken.
+      None:
+        text:
+          en: None of the above
+          nl: Geen van bovenstaande
+
+
+  - name: ExplanationGrey
+    text: 
+      en: Explanation
+      nl: Toelichting
+    type: String
+    layout:
+      multiline: true
+  
+  - name: DPIA
+    text:
+      en: Will a DPIA be performed?
+      nl: Zal er een DPIA uitgevoerd worden?
+    type: YesNo!
+    layout: 
+      type: RadioList
