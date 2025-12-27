@@ -18,4 +18,8 @@
       <Content Include="Workflow\.vscode\launch.json" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\workflow-api\UvA.Workflow\UvA.Workflow.csproj" />
+    </ItemGroup>
+
 </Project>
