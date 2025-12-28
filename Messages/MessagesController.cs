@@ -23,6 +23,16 @@ public class MessagesController(MessagesRepository repository, IUserRepository u
         return messages.Select(m => MessageDto.Create(m, users));
     }
 
+    [HttpPost("{instanceId}/Import")]
+    public async Task<IActionResult> ImportMessages(string instanceId, ImportMessageInput[] messages,
+        CancellationToken ct)
+    {
+        // TODO: authentication
+        foreach (var msg in messages)
+            await repository.AddMessage(await msg.ToMessage(instanceId, userService, ct), ct);
+        return Ok();
+    }
+    
     [HttpPost("{instanceId}")]
     public async Task<MessageDto> AddMessage(string instanceId, MessageInput input, CancellationToken ct)
     {
