@@ -109,3 +109,16 @@ properties:
         2. Subsidiariteit: Kan het doel van de verwerking op een andere, voor de betrokkene minder nadelige wijze, worden bereikt?
       en: |
         Assess whether the intended data processing is necessary to achieve the goal. In any case, substantiate whether the requirements of proportionality and subsidiarity have been met.
+  - name: Rights
+    type: String!
+    layout: { multiline: true }
+    text:
+      nl: Rechten van betrokkenen
+      en: Rights of data subjects
+    description:
+      nl: |
+        Geef aan of het binnen de nieuwe of te wijzigen verwerking (proces of systeem) mogelijk is om de rechten van betrokkenen uit te oefenen.
+        Geef daarnaast aan hoe invulling wordt gegeven aan de informatieplicht (hoe worden betrokkenen geïnformeerd?) en of aanpassing van het privacy statement van [UvA](https://www.uva.nl/home/disclaimers/privacy.html) of [HvA](https://www.hva.nl/home/disclaimers/privacy#anker-privacy-statement) nodig is.
+      en: |
+        Indicate whether it is possible to exercise the rights of data subjects within the new or to be changed processing (process or system).
+        In addition, indicate how the obligation to provide information is fulfilled (how are data subjects informed?) and whether amendments to the [UvA](https://www.uva.nl/home/disclaimers/privacy.html) or [HvA](https://www.hva.nl/home/disclaimers/privacy#anker-privacy-statement) privacy statement are necessary.

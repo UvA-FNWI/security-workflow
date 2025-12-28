@@ -5,3 +5,7 @@ title:
 
 pages:
   - name: Page
+    fields:
+      - Contract
+      - DPA
+      - Other

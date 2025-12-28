@@ -72,11 +72,14 @@ globalActions:
   - name: ViewAll
     roles: [ISO, Editor]
     type: View
-    forms: [Base, Privacy, Classification]
+    forms: [Base, Privacy, Classification, Documents]
   - roles: [ISO, Editor]
     type: Edit
-    forms: [Base, Privacy, Classification]
+    forms: [Base, Privacy, Classification, Documents]
     steps: [Basics, Details, Review]
+  - roles: [ISO, Editor]
+    type: Submit
+    forms: [Documents]
 
 steps:
   - Start
