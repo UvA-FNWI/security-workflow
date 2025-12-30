@@ -16,6 +16,12 @@ properties:
   - name: Viewer
     type: "[User]"
     
+globalActions:
+  - roles: [ISO]
+    type: View
+  - roles: [ISO]
+    type: ViewAdminTools
+    
 seedData:
   - ExternalId: UvA
     Institution: Top

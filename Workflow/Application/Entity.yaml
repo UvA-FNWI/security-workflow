@@ -47,21 +47,21 @@ properties:
       nl: Deze personen hebben rechten om dit dossier te bewerken
       en: These users are authorized to edit this record
     type: "[User]"
-  - name: InstitutionNew
+  - name: Institution
     text:
-      en: Institution (reference)
-      nl: Instelling (verwijzing)
-    type: Department!
+      en: Institution
+      nl: Instelling
+    type: "[Department]!"
     layout:
       type: RadioList
     filter:
       value:
         property: Department.Institution
         equal: =Top
-  - name: OrgUnitNew
+  - name: OrgUnit
     text:
-      en: Organisational unit (reference)
-      nl: Organisatieonderdeel (verwijzing)
+      en: Organisational unit
+      nl: Organisatieonderdeel
     type: Department!
     filter:
       logical:
@@ -69,7 +69,7 @@ properties:
         children:
         - value:
             property: Department.Institution
-            equal: InstitutionNew.ExternalId
+            in: InstitutionNew.ExternalId
         - value:
             property: Department.Institution
             isEmpty: true
