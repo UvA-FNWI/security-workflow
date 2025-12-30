@@ -47,6 +47,32 @@ properties:
       nl: Deze personen hebben rechten om dit dossier te bewerken
       en: These users are authorized to edit this record
     type: "[User]"
+  - name: InstitutionNew
+    text:
+      en: Institution (reference)
+      nl: Instelling (verwijzing)
+    type: Department!
+    layout:
+      type: RadioList
+    filter:
+      value:
+        property: Department.Institution
+        equal: =Top
+  - name: OrgUnitNew
+    text:
+      en: Organisational unit (reference)
+      nl: Organisatieonderdeel (verwijzing)
+    type: Department!
+    filter:
+      logical:
+        operator: Or
+        children:
+        - value:
+            property: Department.Institution
+            equal: InstitutionNew.ExternalId
+        - value:
+            property: Department.Institution
+            isEmpty: true
 
   - name: Contract
     text:

@@ -1,15 +1,124 @@
 name: Department
 titlePlural: Departments
+instanceTitle: "{{ NameDutch }}"
 
 properties:
   - name: ExternalId
     type: String!
-  - name: Name
+  - name: NameDutch
     type: String!
+  - name: NameEnglish
+    type: String!
+  - name: Institution
+    type: String
   - name: ISO
-    type: User[]
+    type: "[User]"
   - name: Viewer
-    type: User[]
+    type: "[User]"
     
 seedData:
-  
+  - ExternalId: UvA
+    Institution: Top
+    NameDutch: Universiteit van Amsterdam
+    NameEnglish: University of Amsterdam
+    
+  - ExternalId: HvA
+    Institution: Top
+    NameDutch: Hogeschool van Amsterdam
+    NameEnglish: Amsterdam University of Applied Sciences
+    
+  - ExternalId: AC
+    NameDutch: Administratief Centrum
+    NameEnglish: Administration Centre
+
+  - ExternalId: ICTS
+    NameDutch: ICT Services
+    NameEnglish: ICT Services
+
+  - ExternalId: FS
+    NameDutch: Facility Services
+    NameEnglish: Facility Services
+
+  - ExternalId: UB
+    NameDutch: Bibliotheek
+    NameEnglish: University Library
+
+  - ExternalId: BB
+    Institution: UvA
+    NameDutch: Bestuursstaf
+    NameEnglish: Executive Staff
+
+  - ExternalId: BS
+    Institution: HvA
+    NameDutch: Bestuursstaf
+    NameEnglish: Executive Staff
+
+  - ExternalId: StS
+    Institution: UvA
+    NameDutch: Studenten Services
+    NameEnglish: Student Services
+
+  - ExternalId: SZ
+    Institution: HvA
+    NameDutch: Studentenzaken
+    NameEnglish: Student Affairs
+
+  - ExternalId: FdR
+    Institution: UvA
+    NameDutch: Faculteit der Rechtsgeleerdheid
+    NameEnglish: Amsterdam Law School
+
+  - ExternalId: FEB
+    Institution: UvA
+    NameDutch: Economie en Bedrijfskunde
+    NameEnglish: Economics and Business
+
+  - ExternalId: FGw
+    Institution: UvA
+    NameDutch: Faculteit der Geesteswetenschappen
+    NameEnglish: Faculty of Humanities
+
+  - ExternalId: FMG
+    Institution: UvA
+    NameDutch: Faculteit der Maatschappij- en Gedragswetenschappen
+    NameEnglish: Faculty of Social and Behavioural Sciences
+
+  - ExternalId: FNWI
+    Institution: UvA
+    NameDutch: Faculteit der Natuurwetenschappen, Wiskunde en Informatica
+    NameEnglish: Faculty of Science
+
+  - ExternalId: FDMCI
+    Institution: HvA
+    NameDutch: Faculteit Digitale Media en Creatieve Industrie
+    NameEnglish: Faculty of Digital Media and Creatie Industries
+
+  - ExternalId: FBE
+    Institution: HvA
+    NameDutch: Faculteit Business en Economie
+    NameEnglish: Faculty of Business and Economics
+
+  - ExternalId: FBSV
+    Institution: HvA
+    NameDutch: Faculteit Bewegen, Sport en Voeding
+    NameEnglish: Faculty of Sports and Nutrition
+
+  - ExternalId: FG
+    Institution: HvA
+    NameDutch: Faculteit Gezondheid
+    NameEnglish: Faculty of Health
+
+  - ExternalId: FMR
+    Institution: HvA
+    NameDutch: Faculteit Maatschappij en Recht
+    NameEnglish: Faculty of Applied Social Sciences and Law
+
+  - ExternalId: FOO
+    Institution: HvA
+    NameDutch: Faculteit Onderwijs en Opvoeding
+    NameEnglish: Faculty of Education
+
+  - ExternalId: FT
+    Institution: HvA
+    NameDutch: Faculteit Techniek
+    NameEnglish: Faculty of Technology

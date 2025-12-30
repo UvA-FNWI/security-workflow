@@ -15,7 +15,9 @@ pages:
       - Owner
       - Editors
       - Stakeholders
-      - Institution
+      - InstitutionNew
+      - OrgUnitNew
+      - Institution      
       - OrgUnit
       - Institute
       - Architecture
