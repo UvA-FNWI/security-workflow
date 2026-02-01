@@ -72,10 +72,10 @@ public class FormDocument(WorkflowInstance instance, Form form, Language languag
                 if (question.Layout?.GetValueOrDefault("multiline") is true && answer is string s)
                     table.Cell().Element(CellStyle).Markdown(s);
                 else if (question.DataType == DataType.Choice && answer is string choice)
-                    table.Cell().Element(CellStyle).Text(Localize(question.Values?.GetValueOrDefault(choice)?.Text ?? ""));
+                    table.Cell().Element(CellStyle).Text(Localize(question.Values?.GetOrDefault(choice)?.Text ?? ""));
                 else if (question.DataType == DataType.Choice && answer is string[] choices)
                     table.Cell().Element(CellStyle).Text(choices
-                        .Select(c => Localize(question.Values?.GetValueOrDefault(c)?.Text ?? ""))
+                        .Select(c => Localize(question.Values?.GetOrDefault(c)?.Text ?? ""))
                         .ToSeparatedString());
                 else
                     table.Cell().Element(CellStyle).Text(answer switch

@@ -1,10 +1,10 @@
 name: YesNo
 values:
-  Yes:
+  - name: Yes
     text:
       en: Yes
       nl: Ja
-  No:
+  - name: No
     text:
       en: No
       nl: Nee

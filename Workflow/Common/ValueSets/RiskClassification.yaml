@@ -1,18 +1,18 @@
 name: RiskClassification
 values:
-  Small:
+  - name: Small
     text:
       en: Small
       nl: Klein
-  Medium:
+  - name: Medium
     text:
       en: Medium
       nl: Gemiddeld
-  Large:
+  - name: Large
     text:
       en: Large
       nl: Groot
-  VeryLarge:
+  - name: VeryLarge
     text:
       en: Very large
       nl: Zeer groot

@@ -17,25 +17,25 @@ properties:
   - name: Type
     type: AppType!
     values:
-      Concept: { }
-      Cloud:
+      - name: Concept
+      - name: Cloud
         text:
           en: Cloud service
           nl: Clouddienst
-      Infrastructure:
+      - name: Infrastructure
         text:
           en: Infrastructure
           nl: Infrastructuur
-      Research:
+      - name: Research
         text:
           en: Research project
           nl: Onderzoeksproject
-      Processing:
+      - name: Processing
         text:
           en: Processing
           nl: Verwerking
-      Software: { }
-      Web:
+      - name: Software
+      - name: Web
         text:
           en: Web application
           nl: Webapplicatie
@@ -51,6 +51,7 @@ properties:
     text:
       en: Institution
       nl: Instelling
+    inheritedRoles: [ISO, Viewer]
     type: "[Department]!"
     layout:
       type: RadioList
@@ -63,6 +64,7 @@ properties:
       en: Organisational unit
       nl: Organisatieonderdeel
     type: Department!
+    inheritedRoles: [ISO, Viewer]
     filter:
       logical:
         operator: Or

@@ -1,998 +1,998 @@
 name: Country
 values:
-  AD:
+  - name: AD
     text:
       en: Andorra
       nl: Andorra
-  AE:
+  - name: AE
     text:
       en: United Arab Emirates
       nl: Verenigde Arabische Emiraten
-  AF:
+  - name: AF
     text:
       en: Afghanistan
       nl: Afghanistan
-  AG:
+  - name: AG
     text:
       en: Antigua and Barbuda
       nl: Antigua en Barbuda
-  AI:
+  - name: AI
     text:
       en: Anguilla
       nl: Anguilla
-  AL:
+  - name: AL
     text:
       en: Albania
       nl: Albanië
-  AM:
+  - name: AM
     text:
       en: Armenia
       nl: Armenië
-  AO:
+  - name: AO
     text:
       en: Angola
       nl: Angola
-  AQ:
+  - name: AQ
     text:
       en: Antarctica
       nl: Antarctica
-  AR:
+  - name: AR
     text:
       en: Argentina
       nl: Argentinië
-  AS:
+  - name: AS
     text:
       en: American Samoa
       nl: Amerikaans-Samoa
-  AT:
+  - name: AT
     text:
       en: Austria
       nl: Oostenrijk
-  AU:
+  - name: AU
     text:
       en: Australia
       nl: Australië
-  AW:
+  - name: AW
     text:
       en: Aruba
       nl: Aruba
-  AX:
+  - name: AX
     text:
       en: Åland Islands
       nl: Åland
-  AZ:
+  - name: AZ
     text:
       en: Azerbaijan
       nl: Azerbeidzjan
-  BA:
+  - name: BA
     text:
       en: Bosnia and Herzegovina
       nl: Bosnië en Herzegovina
-  BB:
+  - name: BB
     text:
       en: Barbados
       nl: Barbados
-  BD:
+  - name: BD
     text:
       en: Bangladesh
       nl: Bangladesh
-  BE:
+  - name: BE
     text:
       en: Belgium
       nl: België
-  BF:
+  - name: BF
     text:
       en: Burkina Faso
       nl: Burkina Faso
-  BG:
+  - name: BG
     text:
       en: Bulgaria
       nl: Bulgarije
-  BH:
+  - name: BH
     text:
       en: Bahrain
       nl: Bahrein
-  BI:
+  - name: BI
     text:
       en: Burundi
       nl: Burundi
-  BJ:
+  - name: BJ
     text:
       en: Benin
       nl: Benin
-  BL:
+  - name: BL
     text:
       en: Saint Barthélemy
       nl: Saint-Barthélemy
-  BM:
+  - name: BM
     text:
       en: Bermuda
       nl: Bermuda
-  BN:
+  - name: BN
     text:
       en: Brunei Darussalam
       nl: Brunei
-  BO:
+  - name: BO
     text:
       en: Bolivia, Plurinational State of
       nl: Bolivia
-  BQ:
+  - name: BQ
     text:
       en: Bonaire, Sint Eustatius and Saba
       nl: Caribisch Nederland
-  BR:
+  - name: BR
     text:
       en: Brazil
       nl: Brazilië
-  BS:
+  - name: BS
     text:
       en: Bahamas
       nl: Bahama’s
-  BT:
+  - name: BT
     text:
       en: Bhutan
       nl: Bhutan
-  BV:
+  - name: BV
     text:
       en: Bouvet Island
       nl: Bouveteiland
-  BW:
+  - name: BW
     text:
       en: Botswana
       nl: Botswana
-  BY:
+  - name: BY
     text:
       en: Belarus
       nl: Belarus
-  BZ:
+  - name: BZ
     text:
       en: Belize
       nl: Belize
-  CA:
+  - name: CA
     text:
       en: Canada
       nl: Canada
-  CC:
+  - name: CC
     text:
       en: Cocos (Keeling) Islands
       nl: Cocoseilanden
-  CD:
+  - name: CD
     text:
       en: Congo, The Democratic Republic of the
       nl: Congo-Kinshasa
-  CF:
+  - name: CF
     text:
       en: Central African Republic
       nl: Centraal-Afrikaanse Republiek
-  CG:
+  - name: CG
     text:
       en: Congo
       nl: Congo-Brazzaville
-  CH:
+  - name: CH
     text:
       en: Switzerland
       nl: Zwitserland
-  CI:
+  - name: CI
     text:
       en: Côte d'Ivoire
       nl: Ivoorkust
-  CK:
+  - name: CK
     text:
       en: Cook Islands
       nl: Cookeilanden
-  CL:
+  - name: CL
     text:
       en: Chile
       nl: Chili
-  CM:
+  - name: CM
     text:
       en: Cameroon
       nl: Kameroen
-  CN:
+  - name: CN
     text:
       en: China
       nl: China
-  CO:
+  - name: CO
     text:
       en: Colombia
       nl: Colombia
-  CR:
+  - name: CR
     text:
       en: Costa Rica
       nl: Costa Rica
-  CU:
+  - name: CU
     text:
       en: Cuba
       nl: Cuba
-  CV:
+  - name: CV
     text:
       en: Cabo Verde
       nl: Kaapverdië
-  CW:
+  - name: CW
     text:
       en: Curaçao
       nl: Curaçao
-  CX:
+  - name: CX
     text:
       en: Christmas Island
       nl: Christmaseiland
-  CY:
+  - name: CY
     text:
       en: Cyprus
       nl: Cyprus
-  CZ:
+  - name: CZ
     text:
       en: Czechia
       nl: Tsjechië
-  DE:
+  - name: DE
     text:
       en: Germany
       nl: Duitsland
-  DJ:
+  - name: DJ
     text:
       en: Djibouti
       nl: Djibouti
-  DK:
+  - name: DK
     text:
       en: Denmark
       nl: Denemarken
-  DM:
+  - name: DM
     text:
       en: Dominica
       nl: Dominica
-  DO:
+  - name: DO
     text:
       en: Dominican Republic
       nl: Dominicaanse Republiek
-  DZ:
+  - name: DZ
     text:
       en: Algeria
       nl: Algerije
-  EC:
+  - name: EC
     text:
       en: Ecuador
       nl: Ecuador
-  EE:
+  - name: EE
     text:
       en: Estonia
       nl: Estland
-  EG:
+  - name: EG
     text:
       en: Egypt
       nl: Egypte
-  EH:
+  - name: EH
     text:
       en: Western Sahara
       nl: Westelijke Sahara
-  ER:
+  - name: ER
     text:
       en: Eritrea
       nl: Eritrea
-  ES:
+  - name: ES
     text:
       en: Spain
       nl: Spanje
-  ET:
+  - name: ET
     text:
       en: Ethiopia
       nl: Ethiopië
-  FI:
+  - name: FI
     text:
       en: Finland
       nl: Finland
-  FJ:
+  - name: FJ
     text:
       en: Fiji
       nl: Fiji
-  FK:
+  - name: FK
     text:
       en: Falkland Islands (Malvinas)
       nl: Falklandeilanden
-  FM:
+  - name: FM
     text:
       en: Micronesia, Federated States of
       nl: Micronesia
-  FO:
+  - name: FO
     text:
       en: Faroe Islands
       nl: Faeröer
-  FR:
+  - name: FR
     text:
       en: France
       nl: Frankrijk
-  GA:
+  - name: GA
     text:
       en: Gabon
       nl: Gabon
-  GB:
+  - name: GB
     text:
       en: United Kingdom
       nl: Verenigd Koninkrijk
-  GD:
+  - name: GD
     text:
       en: Grenada
       nl: Grenada
-  GE:
+  - name: GE
     text:
       en: Georgia
       nl: Georgië
-  GF:
+  - name: GF
     text:
       en: French Guiana
       nl: Frans-Guyana
-  GG:
+  - name: GG
     text:
       en: Guernsey
       nl: Guernsey
-  GH:
+  - name: GH
     text:
       en: Ghana
       nl: Ghana
-  GI:
+  - name: GI
     text:
       en: Gibraltar
       nl: Gibraltar
-  GL:
+  - name: GL
     text:
       en: Greenland
       nl: Groenland
-  GM:
+  - name: GM
     text:
       en: Gambia
       nl: Gambia
-  GN:
+  - name: GN
     text:
       en: Guinea
       nl: Guinee
-  GP:
+  - name: GP
     text:
       en: Guadeloupe
       nl: Guadeloupe
-  GQ:
+  - name: GQ
     text:
       en: Equatorial Guinea
       nl: Equatoriaal-Guinea
-  GR:
+  - name: GR
     text:
       en: Greece
       nl: Griekenland
-  GS:
+  - name: GS
     text:
       en: South Georgia and the South Sandwich Islands
       nl: Zuid-Georgia en Zuidelijke Sandwicheilanden
-  GT:
+  - name: GT
     text:
       en: Guatemala
       nl: Guatemala
-  GU:
+  - name: GU
     text:
       en: Guam
       nl: Guam
-  GW:
+  - name: GW
     text:
       en: Guinea-Bissau
       nl: Guinee-Bissau
-  GY:
+  - name: GY
     text:
       en: Guyana
       nl: Guyana
-  HK:
+  - name: HK
     text:
       en: Hong Kong
       nl: Hongkong SAR van China
-  HM:
+  - name: HM
     text:
       en: Heard Island and McDonald Islands
       nl: Heard en McDonaldeilanden
-  HN:
+  - name: HN
     text:
       en: Honduras
       nl: Honduras
-  HR:
+  - name: HR
     text:
       en: Croatia
       nl: Kroatië
-  HT:
+  - name: HT
     text:
       en: Haiti
       nl: Haïti
-  HU:
+  - name: HU
     text:
       en: Hungary
       nl: Hongarije
-  ID:
+  - name: ID
     text:
       en: Indonesia
       nl: Indonesië
-  IE:
+  - name: IE
     text:
       en: Ireland
       nl: Ierland
-  IL:
+  - name: IL
     text:
       en: Israel
       nl: Israël
-  IM:
+  - name: IM
     text:
       en: Isle of Man
       nl: Isle of Man
-  IN:
+  - name: IN
     text:
       en: India
       nl: India
-  IO:
+  - name: IO
     text:
       en: British Indian Ocean Territory
       nl: Brits Indische Oceaanterritorium
-  IQ:
+  - name: IQ
     text:
       en: Iraq
       nl: Irak
-  IR:
+  - name: IR
     text:
       en: Iran
       nl: Iran
-  IS:
+  - name: IS
     text:
       en: Iceland
       nl: IJsland
-  IT:
+  - name: IT
     text:
       en: Italy
       nl: Italië
-  JE:
+  - name: JE
     text:
       en: Jersey
       nl: Jersey
-  JM:
+  - name: JM
     text:
       en: Jamaica
       nl: Jamaica
-  JO:
+  - name: JO
     text:
       en: Jordan
       nl: Jordanië
-  JP:
+  - name: JP
     text:
       en: Japan
       nl: Japan
-  KE:
+  - name: KE
     text:
       en: Kenya
       nl: Kenia
-  KG:
+  - name: KG
     text:
       en: Kyrgyzstan
       nl: Kirgizië
-  KH:
+  - name: KH
     text:
       en: Cambodia
       nl: Cambodja
-  KI:
+  - name: KI
     text:
       en: Kiribati
       nl: Kiribati
-  KM:
+  - name: KM
     text:
       en: Comoros
       nl: Comoren
-  KN:
+  - name: KN
     text:
       en: Saint Kitts and Nevis
       nl: Saint Kitts en Nevis
-  KP:
+  - name: KP
     text:
       en: Korea, Democratic People's Republic of
       nl: Noord-Korea
-  KR:
+  - name: KR
     text:
       en: Korea, Republic of
       nl: Zuid-Korea
-  KW:
+  - name: KW
     text:
       en: Kuwait
       nl: Koeweit
-  KY:
+  - name: KY
     text:
       en: Cayman Islands
       nl: Kaaimaneilanden
-  KZ:
+  - name: KZ
     text:
       en: Kazakhstan
       nl: Kazachstan
-  LA:
+  - name: LA
     text:
       en: Lao People's Democratic Republic
       nl: Laos
-  LB:
+  - name: LB
     text:
       en: Lebanon
       nl: Libanon
-  LC:
+  - name: LC
     text:
       en: Saint Lucia
       nl: Saint Lucia
-  LI:
+  - name: LI
     text:
       en: Liechtenstein
       nl: Liechtenstein
-  LK:
+  - name: LK
     text:
       en: Sri Lanka
       nl: Sri Lanka
-  LR:
+  - name: LR
     text:
       en: Liberia
       nl: Liberia
-  LS:
+  - name: LS
     text:
       en: Lesotho
       nl: Lesotho
-  LT:
+  - name: LT
     text:
       en: Lithuania
       nl: Litouwen
-  LU:
+  - name: LU
     text:
       en: Luxembourg
       nl: Luxemburg
-  LV:
+  - name: LV
     text:
       en: Latvia
       nl: Letland
-  LY:
+  - name: LY
     text:
       en: Libya
       nl: Libië
-  MA:
+  - name: MA
     text:
       en: Morocco
       nl: Marokko
-  MC:
+  - name: MC
     text:
       en: Monaco
       nl: Monaco
-  MD:
+  - name: MD
     text:
       en: Moldova, Republic of
       nl: Moldavië
-  ME:
+  - name: ME
     text:
       en: Montenegro
       nl: Montenegro
-  MF:
+  - name: MF
     text:
       en: Saint Martin (French part)
       nl: Saint-Martin
-  MG:
+  - name: MG
     text:
       en: Madagascar
       nl: Madagaskar
-  MH:
+  - name: MH
     text:
       en: Marshall Islands
       nl: Marshalleilanden
-  MK:
+  - name: MK
     text:
       en: North Macedonia
       nl: Noord-Macedonië
-  ML:
+  - name: ML
     text:
       en: Mali
       nl: Mali
-  MM:
+  - name: MM
     text:
       en: Myanmar
       nl: Myanmar (Birma)
-  MN:
+  - name: MN
     text:
       en: Mongolia
       nl: Mongolië
-  MO:
+  - name: MO
     text:
       en: Macao
       nl: Macau SAR van China
-  MP:
+  - name: MP
     text:
       en: Northern Mariana Islands
       nl: Noordelijke Marianen
-  MQ:
+  - name: MQ
     text:
       en: Martinique
       nl: Martinique
-  MR:
+  - name: MR
     text:
       en: Mauritania
       nl: Mauritanië
-  MS:
+  - name: MS
     text:
       en: Montserrat
       nl: Montserrat
-  MT:
+  - name: MT
     text:
       en: Malta
       nl: Malta
-  MU:
+  - name: MU
     text:
       en: Mauritius
       nl: Mauritius
-  MV:
+  - name: MV
     text:
       en: Maldives
       nl: Maldiven
-  MW:
+  - name: MW
     text:
       en: Malawi
       nl: Malawi
-  MX:
+  - name: MX
     text:
       en: Mexico
       nl: Mexico
-  MY:
+  - name: MY
     text:
       en: Malaysia
       nl: Maleisië
-  MZ:
+  - name: MZ
     text:
       en: Mozambique
       nl: Mozambique
-  NA:
+  - name: NA
     text:
       en: Namibia
       nl: Namibië
-  NC:
+  - name: NC
     text:
       en: New Caledonia
       nl: Nieuw-Caledonië
-  NE:
+  - name: NE
     text:
       en: Niger
       nl: Niger
-  NF:
+  - name: NF
     text:
       en: Norfolk Island
       nl: Norfolk
-  NG:
+  - name: NG
     text:
       en: Nigeria
       nl: Nigeria
-  NI:
+  - name: NI
     text:
       en: Nicaragua
       nl: Nicaragua
-  NL:
+  - name: NL
     text:
       en: Netherlands
       nl: Nederland
-  NO:
+  - name: NO
     text:
       en: Norway
       nl: Noorwegen
-  NP:
+  - name: NP
     text:
       en: Nepal
       nl: Nepal
-  NR:
+  - name: NR
     text:
       en: Nauru
       nl: Nauru
-  NU:
+  - name: NU
     text:
       en: Niue
       nl: Niue
-  NZ:
+  - name: NZ
     text:
       en: New Zealand
       nl: Nieuw-Zeeland
-  OM:
+  - name: OM
     text:
       en: Oman
       nl: Oman
-  PA:
+  - name: PA
     text:
       en: Panama
       nl: Panama
-  PE:
+  - name: PE
     text:
       en: Peru
       nl: Peru
-  PF:
+  - name: PF
     text:
       en: French Polynesia
       nl: Frans-Polynesië
-  PG:
+  - name: PG
     text:
       en: Papua New Guinea
       nl: Papoea-Nieuw-Guinea
-  PH:
+  - name: PH
     text:
       en: Philippines
       nl: Filipijnen
-  PK:
+  - name: PK
     text:
       en: Pakistan
       nl: Pakistan
-  PL:
+  - name: PL
     text:
       en: Poland
       nl: Polen
-  PM:
+  - name: PM
     text:
       en: Saint Pierre and Miquelon
       nl: Saint-Pierre en Miquelon
-  PN:
+  - name: PN
     text:
       en: Pitcairn
       nl: Pitcairneilanden
-  PR:
+  - name: PR
     text:
       en: Puerto Rico
       nl: Puerto Rico
-  PS:
+  - name: PS
     text:
       en: Palestine, State of
       nl: Palestijnse gebieden
-  PT:
+  - name: PT
     text:
       en: Portugal
       nl: Portugal
-  PW:
+  - name: PW
     text:
       en: Palau
       nl: Palau
-  PY:
+  - name: PY
     text:
       en: Paraguay
       nl: Paraguay
-  QA:
+  - name: QA
     text:
       en: Qatar
       nl: Qatar
-  RE:
+  - name: RE
     text:
       en: Réunion
       nl: Réunion
-  RO:
+  - name: RO
     text:
       en: Romania
       nl: Roemenië
-  RS:
+  - name: RS
     text:
       en: Serbia
       nl: Servië
-  RU:
+  - name: RU
     text:
       en: Russian Federation
       nl: Rusland
-  RW:
+  - name: RW
     text:
       en: Rwanda
       nl: Rwanda
-  SA:
+  - name: SA
     text:
       en: Saudi Arabia
       nl: Saoedi-Arabië
-  SB:
+  - name: SB
     text:
       en: Solomon Islands
       nl: Salomonseilanden
-  SC:
+  - name: SC
     text:
       en: Seychelles
       nl: Seychellen
-  SD:
+  - name: SD
     text:
       en: Sudan
       nl: Soedan
-  SE:
+  - name: SE
     text:
       en: Sweden
       nl: Zweden
-  SG:
+  - name: SG
     text:
       en: Singapore
       nl: Singapore
-  SH:
+  - name: SH
     text:
       en: Saint Helena, Ascension and Tristan da Cunha
       nl: Sint-Helena
-  SI:
+  - name: SI
     text:
       en: Slovenia
       nl: Slovenië
-  SJ:
+  - name: SJ
     text:
       en: Svalbard and Jan Mayen
       nl: Spitsbergen en Jan Mayen
-  SK:
+  - name: SK
     text:
       en: Slovakia
       nl: Slowakije
-  SL:
+  - name: SL
     text:
       en: Sierra Leone
       nl: Sierra Leone
-  SM:
+  - name: SM
     text:
       en: San Marino
       nl: San Marino
-  SN:
+  - name: SN
     text:
       en: Senegal
       nl: Senegal
-  SO:
+  - name: SO
     text:
       en: Somalia
       nl: Somalië
-  SR:
+  - name: SR
     text:
       en: Suriname
       nl: Suriname
-  SS:
+  - name: SS
     text:
       en: South Sudan
       nl: Zuid-Soedan
-  ST:
+  - name: ST
     text:
       en: Sao Tome and Principe
       nl: Sao Tomé en Principe
-  SV:
+  - name: SV
     text:
       en: El Salvador
       nl: El Salvador
-  SX:
+  - name: SX
     text:
       en: Sint Maarten (Dutch part)
       nl: Sint-Maarten
-  SY:
+  - name: SY
     text:
       en: Syrian Arab Republic
       nl: Syrië
-  SZ:
+  - name: SZ
     text:
       en: Eswatini
       nl: Eswatini
-  TC:
+  - name: TC
     text:
       en: Turks and Caicos Islands
       nl: Turks- en Caicoseilanden
-  TD:
+  - name: TD
     text:
       en: Chad
       nl: Tsjaad
-  TF:
+  - name: TF
     text:
       en: French Southern Territories
       nl: Franse Gebieden in de zuidelijke Indische Oceaan
-  TG:
+  - name: TG
     text:
       en: Togo
       nl: Togo
-  TH:
+  - name: TH
     text:
       en: Thailand
       nl: Thailand
-  TJ:
+  - name: TJ
     text:
       en: Tajikistan
       nl: Tadzjikistan
-  TK:
+  - name: TK
     text:
       en: Tokelau
       nl: Tokelau
-  TL:
+  - name: TL
     text:
       en: Timor-Leste
       nl: Oost-Timor
-  TM:
+  - name: TM
     text:
       en: Turkmenistan
       nl: Turkmenistan
-  TN:
+  - name: TN
     text:
       en: Tunisia
       nl: Tunesië
-  TO:
+  - name: TO
     text:
       en: Tonga
       nl: Tonga
-  TR:
+  - name: TR
     text:
       en: Turkey
       nl: Turkije
-  TT:
+  - name: TT
     text:
       en: Trinidad and Tobago
       nl: Trinidad en Tobago
-  TV:
+  - name: TV
     text:
       en: Tuvalu
       nl: Tuvalu
-  TW:
+  - name: TW
     text:
       en: Taiwan, Province of China
       nl: Taiwan
-  TZ:
+  - name: TZ
     text:
       en: Tanzania, United Republic of
       nl: Tanzania
-  UA:
+  - name: UA
     text:
       en: Ukraine
       nl: Oekraïne
-  UG:
+  - name: UG
     text:
       en: Uganda
       nl: Oeganda
-  UM:
+  - name: UM
     text:
       en: United States Minor Outlying Islands
       nl: Kleine afgelegen eilanden van de Verenigde Staten
-  US:
+  - name: US
     text:
       en: United States
       nl: Verenigde Staten
-  UY:
+  - name: UY
     text:
       en: Uruguay
       nl: Uruguay
-  UZ:
+  - name: UZ
     text:
       en: Uzbekistan
       nl: Oezbekistan
-  VA:
+  - name: VA
     text:
       en: Holy See (Vatican City State)
       nl: Vaticaanstad
-  VC:
+  - name: VC
     text:
       en: Saint Vincent and the Grenadines
       nl: Saint Vincent en de Grenadines
-  VE:
+  - name: VE
     text:
       en: Venezuela, Bolivarian Republic of
       nl: Venezuela
-  VG:
+  - name: VG
     text:
       en: Virgin Islands, British
       nl: Britse Maagdeneilanden
-  VI:
+  - name: VI
     text:
       en: Virgin Islands, U.S.
       nl: Amerikaanse Maagdeneilanden
-  VN:
+  - name: VN
     text:
       en: Viet Nam
       nl: Vietnam
-  VU:
+  - name: VU
     text:
       en: Vanuatu
       nl: Vanuatu
-  WF:
+  - name: WF
     text:
       en: Wallis and Futuna
       nl: Wallis en Futuna
-  WS:
+  - name: WS
     text:
       en: Samoa
       nl: Samoa
-  YE:
+  - name: YE
     text:
       en: Yemen
       nl: Jemen
-  YT:
+  - name: YT
     text:
       en: Mayotte
       nl: Mayotte
-  ZA:
+  - name: ZA
     text:
       en: South Africa
       nl: Zuid-Afrika
-  ZM:
+  - name: ZM
     text:
       en: Zambia
       nl: Zambia
-  ZW:
+  - name: ZW
     text:
       en: Zimbabwe
       nl: Zimbabwe

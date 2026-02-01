@@ -148,15 +148,15 @@ properties:
       nl: Locatie
     type: Location!
     values:
-      UvA:
+      - name: UvA
         text: 
           en: Entirely within the institution
           nl: Geheel binnen de instelling
-      EU:
+      - name: EU
         text:
           en: Entirely within the EU
           nl: Geheel binnen de EU
-      Elsewhere:
+      - name: Elsewhere
         text:
           en: Outside the EU
           nl: Geheel buiten de EU
@@ -174,23 +174,23 @@ properties:
               equal: =Elsewhere
           - name: PersonalData
     values:
-      AdequacyDecision:
+      - name: AdequacyDecision
         text:
           nl: Adequaatheidsbesluit
           en: Adequacy decision
-      StandardContractualClauses:
+      - name: StandardContractualClauses
         text:
           nl: Standard Contractual Clauses (modelcontract)
           en: Standard Contractual Clauses (model contract)
-      ApprovedCodeOfConductOrCertificationMechanism:
+      - name: ApprovedCodeOfConductOrCertificationMechanism
         text:
           nl: Goedgekeurde gedragscode of certificeringsmechanisme
           en: Approved code of conduct or certification mechanism
-      BindingCorporateRules:
+      - name: BindingCorporateRules
         text:
           nl: Binding Corporate Rules (bindende bedrijfsvoorschriften)
           en: Binding Corporate Rules
-      SpecificExceptions:
+      - name: SpecificExceptions
         text:
           nl: Doorgifte op basis van specifieke uitzonderingen (artikel 49 AVG)
           en: Transfer based on specific exceptions (article 49 GDPR)
@@ -198,12 +198,12 @@ properties:
   - name: Hosting
     type: HostingType
     values:
-      FEIOG: {}
-      TransIP: {}
-      Azure: {}
-      AWS: {}
-      SaaS: {}
-      Other:
+      - name: FEIOG
+      - name: TransIP
+      - name: Azure
+      - name: AWS
+      - name: SaaS
+      - name: Other
         text:
           en: Other
           nl: Anders

@@ -14,23 +14,23 @@ properties:
       nl: Rol
       en: Role
     values:
-      Processor:
+      - name: Processor
         text:
           nl: Verwerker
           en: Processor
-      SubProcessor:
+      - name: SubProcessor
         text:
           nl: Subverwerker
           en: Subprocessor
-      Controller:
+      - name: Controller
         text:
           nl: Verwerkingsverantwoordelijke
           en: Controller
-      Issuer:
+      - name: Issuer
         text:
           nl: Verstrekker
           en: Issuer
-      Recipient:
+      - name: Recipient
         text:
           nl: Ontvanger
           en: Recipient

@@ -27,23 +27,23 @@ properties:
       nl: Wat is de onderliggende, juridische onderbouwing op basis waarvan we de persoonsgegevens mogen verwerken?
     type: LegalBasis!
     values:
-      PublicInterest:
+      - name: PublicInterest
         text:
           en: Public interest
           nl: Algemeen belang
-      LegitimateInterest:
+      - name: LegitimateInterest
         text:
           en: Legitimate interest
           nl: Gerechtvaardigd belang
-      LegalObligation:
+      - name: LegalObligation
         text:
           en: Legal obligation
           nl: Wettelijke verplichting
-      Consent:
+      - name: Consent
         text:
           en: Consent
           nl: Toestemming
-      Contract:
+      - name: Contract
         text:
           en: Performance of a contract
           nl: Uitvoering van een overeenkomst
@@ -140,66 +140,66 @@ properties:
         Zie [dit document](https://autoriteitpersoonsgegevens.nl/uploads/imported/stcrt-2019-64418.pdf) voor meer details over de categorieën.
         Als het antwoord 'Ja' is, dan is een DPIA verplicht.
     values:
-      Camera:
+      - name: Camera
         text:
           en: (Flexible) camera surveillance
           nl: (Flexibel) cameratoezicht
-      EmployeeMonitoring:
+      - name: EmployeeMonitoring
         text:
           en: Employee monitoring
           nl: Monitoring van medewerkers
-      LocationData:
+      - name: LocationData
         text: 
           en: Location data
           nl: Locatiegegevens
-      CommunicationData:
+      - name: CommunicationData
         text:
           en: Communication data
           nl: Communicatiegegevens
-      Profiling: {}
-      Collaboration:
+      - name: Profiling {}
+      - name: Collaboration
         text:
           en: Collaborative partnerships
           nl: Samenwerkingsverbanden
-      Health:
+      - name: Health
         text: 
           en: Health data
           nl: Gezondheidsgegevens
-      Financial:
+      - name: Financial
         text:
           en: Financial situation
           nl: Financiële situatie
-      IoT:
+      - name: IoT
         text: Internet of Things
-      Biometric:
+      - name: Biometric
         text: 
           en: Biometric data
           nl: Biometrische gegevens
-      Genetic:
+      - name: Genetic
         text:
           en: Genetic data
           nl: Genetische gegevens
-      Covert:
+      - name: Covert
         text:
           en: Covert investigations
           nl: Heimelijk onderzoek
-      Observation:
+      - name: Observation
         text:
           en: Observation and influencing of behaviour
           nl: Observatie en beïnvloeding van gedrag
-      Credit:
+      - name: Credit
         text:
           en: Credit scores
           nl: Creditscores
-      Fraud:
+      - name: Fraud
         text:
           en: Fraud prevention
           nl: Fraudebestijding
-      BlackLists:
+      - name: BlackLists
         text:
           en: Blacklists
           nl: Zwarte lijsten
-      None:
+      - name: None
         text:
           en: None of the above
           nl: Geen van bovenstaande
@@ -223,35 +223,35 @@ properties:
       en: If at least two of these are the case, a DPIA is compulsory.
       nl: Als er twee of meer van deze van toepassing zijn, is een DPIA verplicht.
     values:
-      Characteristics:
+      - name: Characteristics
         text: 
           en: People are judged on the basis of personal characteristics
           nl: Mensen worden beoordeeld op basis van persoonskenmerken
         description:
           en: This includes profiling and making forecasts, especially based on characteristics such as a person's job performance, economic situation, health, personal preferences or interests, reliability or behaviour, location or travel.
           nl: Het gaat hierbij onder meer om profiling en het maken van prognoses, met name op basis van kenmerken als iemands beroepsprestaties, economische situatie, gezondheid, persoonlijke voorkeuren of interesses, betrouwbaar-heid of gedrag, locatie of verplaatsingen.
-      Profiling:
+      - name: Profiling
         text: 
           en: Automated decisions are made (profiling)
           nl: Geautomatiseerde beslissingen worden genomen (profiling)
         description: 
           en: These are decisions that have legal consequences or substantial consequences for the data subject. Such data processing could – for example – lead to people being excluded or discriminated against. Data processing operations with little or no consequences for people do not fall under this criterion.
           nl: Het gaat hierbij om beslissingen die voor de betrokkene rechtsgevolgen of wezenlijke gevolgen hebben. Zo’n gegevensverwerking kan er bijvoorbeeld toe leiden dat mensen worden uitgesloten of gediscrimineerd. Gegevensverwerkingen met geringe of geen gevolgen voor mensen vallen niet onder dit criterium.
-      Monitoring:
+      - name: Monitoring
         text:
           en: Systematic and large-scale monitoring
           nl: Systematische en grootschalige monitoring
         description:
           en: This refers to monitoring of publicly accessible spaces, for example with camera surveillance. Here, personal data may be collected without data subjects knowing who is collecting their data and what happens to it afterwards. Moreover, it may be impossible for people to evade such data processing in public places.
           nl: Het gaat hierbij om monitoring van openbaar toegankelijke ruimten, bijvoorbeeld met cameratoezicht. Hierbij kunnen persoonsgegevens worden verzameld zonder dat betrokkenen weten wie hun gegevens verzamelt en wat daar vervolgens mee gebeurt. Bovendien kan het onmogelijk zijn voor mensen om zich in openbare ruimten aan deze gegevensverwerking te onttrekken.
-      Sensitive:
+      - name: Sensitive
         text: 
           en: Sensitive personal data is being processed
           nl: Gevoelige persoonsgegevens worden verwerkt
         description:
           en: These are special categories of personal data (race/ethnicity, political views, religion, trade union, health, sexual behaviour/targeting, genetic/biometric data), and also include data that are generally considered privacy-sensitive, such as electronic communication data, location data and financial data.
           nl: Het gaat hierbij om bijzondere categorieën van persoonsgegevens (ras / etniciteit, politieke opvattingen, religie, vakbond, gezondheid, seksueel gedrag/gerichtheid, genetische/biometrische gegevens) en het gaat hier ook om gegevens die over het algemeen als privacygevoelig worden beschouwd, zoals gegevens over elektronische communicatie, locatiegegevens en financiële gegevens.
-      LargeScale:
+      - name: LargeScale
         text:
           en: Large-scale processing of data
           nl: Grootschalige dataverwerking
@@ -270,28 +270,28 @@ properties:
             - De tijdsduur van de gegevensverwerking (meerdere jaren);
             - De geografische reikwijdte van de gegevensverwerking.
 
-      Linked:
+      - name: Linked
         text: 
           en: Linked databases
           nl: Gekoppelde databases
         description:
           en: These are data sets that are linked or combined with each other, from which new insights are subsequently extracted. For example, databases resulting from two or more different data processing operations with different purposes and/or carried out by different controllers, in a way that data subjects could not reasonably expect.
           nl: Het gaat hierbij om gegevensverzamelingen die aan elkaar gekoppeld of met elkaar gecombineerd zijn, waar vervolgens nieuwe inzichten uit worden gehaald. Bijvoorbeeld databases die voortkomen uit twee of meer verschillende gegevensverwerkingen met verschillende doelen en/of uitgevoerd door verschillende verantwoordelijken, op een manier die betrokkenen niet redelijkerwijs kunnen verwachten.
-      Vulnerable:
+      - name: Vulnerable
         text:
           en: Personal data of vulnerable people is processed
           nl: Persoonsgegevens van kwetsbare personen worden verwerkt
         description: 
           en: When processing this type of data, a DPIA may be necessary because there is an unequal balance of power between the data subject and the controller. As a result, data subjects cannot freely consent to or refuse to consent to the processing of their data. These may include – for example – employees, children and patients.
           nl: Bij het verwerken van dit type gegevens kan een DPIA nodig zijn omdat er sprake is van een ongelijke machtsverhouding tussen de betrokkene en de verantwoordelijke. Dit heeft als gevolg dat betrokkenen niet in vrijheid toestemming kunnen geven of weigeren voor het verwerken van hun gegevens. Het kan hierbij om bijvoorbeeld werknemers, kinderen en patiënten gaan.
-      NewTech:
+      - name: NewTech
         text:
           en: New technologies are used
           nl: Nieuwe technologieën worden ingezet
         description: 
           en: The question here is not whether the technology is new to UvA, but whether it is a new technology whose personal or societal impact are not known to UvA yet. Some 'Internet of Things' applications, for example, can have a major impact on people's daily lives and privacy, in connection with which a DPIA is required.
           nl: Hierbij gaat het er niet om of de technologie nieuw is voor de UvA, maar of het  een nieuwe technologie betreft waarvan de UvA nog niet weet wat de persoonlijke of maatschappelijke gevolgen zijn. Sommige ‘Internet of Things’-toepassingen bijvoorbeeld, kunnen een grote impact hebben op het dagelijks leven en de privacy van mensen, waardoor een DPIA nodig is.
-      Blocking:
+      - name: Blocking
         text:
           en: Blocking of a right, service or contract
           nl: Blokkeren van een recht, dienst of contract 
@@ -312,7 +312,7 @@ properties:
             - Een contract niet kunnen afsluiten.
             
             Bijvoorbeeld een bank die persoonsgegevens verwerkt om te bepalen of zij een lening aan iemand willen verstrekken.
-      None:
+      - name: None
         text:
           en: None of the above
           nl: Geen van bovenstaande
