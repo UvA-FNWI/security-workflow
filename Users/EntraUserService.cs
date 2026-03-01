@@ -2,6 +2,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
+using Microsoft.Identity.Web;
 using MongoDB.Bson;
 using UvA.Workflow.Entities.Domain;
 using UvA.Workflow.Security.Extensions;
@@ -34,10 +35,12 @@ public class EntraUserService(IUserRepository userRepository, IMemoryCache cache
 
     public async Task<User?> GetCurrentUser(CancellationToken ct = default)
     {
-        var upn = contextAccessor.HttpContext?.User.FindFirstValue(ClaimTypes.Upn);
+        var claims = contextAccessor.HttpContext?.User;
+        var upn = claims?.FindFirstValue(ClaimTypes.Upn);
         if (upn == null) return null;
-        var user = await GetUser(upn, ct);
-        if (user != null && !IsCached(upn)) 
+        var isCached = IsCached(upn);
+        var user = await AddOrUpdateUser(upn, claims!.FindFirstValue("name") ?? "User", upn, ct);
+        if (!isCached) 
             await UpdateRoles(user, ct);
         return user;
     }

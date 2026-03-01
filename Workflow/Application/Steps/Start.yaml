@@ -1,11 +1,10 @@
 name: Start
 
 actions:
-  - roles: [ISO]
+  - roles: [ISO, Editor]
     name: SubmitStart
     type: Submit
     form: Start
-
 
 ends:
   event: Start

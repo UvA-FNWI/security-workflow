@@ -11,6 +11,10 @@ columns:
     default: Draft
   - property: Hosting
     filterType: Pick
+  - property: OrgUnit.ExternalId
+    title:
+      en: Organisational unit
+      nl: Organisatieonderdeel
   - property: PersonalData
     title:
       en: Personal data

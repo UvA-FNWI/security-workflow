@@ -39,7 +39,7 @@ properties:
         text:
           en: Web application
           nl: Webapplicatie
-  - name: Editors
+  - name: Editor
     text:
       en: Other stakeholders
       nl: Overige belanghebbenden
@@ -94,11 +94,10 @@ properties:
 
 
 globalActions:
-  - name: CreateApp
-    roles: [ISO]
+  - roles: [ISO, Registered]
     type: CreateInstance
-  - name: ViewAll
-    roles: [ISO, Editor]
+    userProperty: Editor
+  - roles: [ISO, Editor]
     type: View
     forms: [Base, Privacy, Classification, Documents]
   - roles: [ISO, Editor]
@@ -107,6 +106,7 @@ globalActions:
     steps: [Basics, Details, Review]
   - roles: [ISO, Editor]
     type: Submit
+    steps: [Details, Classification, Privacy, Review]
     forms: [Documents]
 
 steps:

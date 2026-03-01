@@ -4,4 +4,4 @@ pages:
     fields:
       - Name
       - Type
-      - Editors
+      - Editor
