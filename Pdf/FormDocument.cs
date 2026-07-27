@@ -2,10 +2,10 @@ using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
 using QuestPDF.Markdown;
-using UvA.Workflow.Entities.Domain;
 using UvA.Workflow.Tools;
 using UvA.Workflow.Users;
 using UvA.Workflow.WorkflowInstances;
+using UvA.Workflow.WorkflowModel;
 
 namespace UvA.Workflow.Security.Pdf;
 

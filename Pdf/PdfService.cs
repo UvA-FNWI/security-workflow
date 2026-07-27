@@ -2,11 +2,11 @@ using iText.Kernel.Pdf;
 using iText.Kernel.Utils;
 using QuestPDF.Fluent;
 using QuestPDF.Infrastructure;
-using UvA.Workflow.Entities.Domain;
 using UvA.Workflow.Persistence;
 using UvA.Workflow.Tools;
 using UvA.Workflow.Users;
 using UvA.Workflow.WorkflowInstances;
+using UvA.Workflow.WorkflowModel;
 
 namespace UvA.Workflow.Security.Pdf;
 
@@ -104,7 +104,7 @@ public class PdfService(ModelService modelService, IWorkflowInstanceRepository i
         if (files.Length == 0)
             return formBytes;
 
-        var artifacts = await files.SelectAsync((f, t) => artifactService.GetArtifact(f.Id, t), ct);
+        var artifacts = await files.SelectAsync((f, t) => artifactService.GetArtifact(f.ArtifactId, t), ct);
 
         return MergePdfs([formBytes, ..artifacts.Where(f => f != null).Select(f => f!.Content)]);
     }

@@ -1,7 +1,7 @@
 using QuestPDF.Fluent;
 using QuestPDF.Infrastructure;
-using UvA.Workflow.Entities.Domain;
 using UvA.Workflow.WorkflowInstances;
+using UvA.Workflow.WorkflowModel;
 
 namespace UvA.Workflow.Security.Pdf;
 

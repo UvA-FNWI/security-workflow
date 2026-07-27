@@ -15,6 +15,6 @@ public class GraphService(GraphServiceClient client)
         }, cancellationToken);
         return resp?.Value?
             .Where(u => u.UserPrincipalName != null && u.DisplayName != null && u.Mail != null)
-            .Select(u => new UserSearchResult(u.UserPrincipalName!, u.DisplayName!, u.Mail!)) ?? [];
+            .Select(u => new UserSearchResult(u.UserPrincipalName!, u.DisplayName!, u.Mail!, "Entra")) ?? [];
     }
 }

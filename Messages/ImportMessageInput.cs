@@ -9,7 +9,8 @@ public record ImportMessageInput(string? QuestionName, MessageItemInput[] Items)
         var list = new List<MessageItem>();
         foreach (var item in Items)
         {
-            var user = await userService.AddOrUpdateUser(item.User.UserName, item.User.DisplayName, item.User.Email, ct);
+            var user = await userService.AddOrUpdateUser(item.User.UserName, item.User.DisplayName, item.User.Email,
+                "local", null, ct);
             list.Add(new MessageItem
             {
                 DateTime = item.DateTime,
